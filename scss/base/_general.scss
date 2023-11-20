@@ -1,0 +1,54 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers"as *;
+
+// Styles for a container element
+.container {
+    max-width: 1200px; // Set maximum width for larger screens
+    margin: 0 auto; // Center the container horizontally
+
+    @include media($extra-large-screen) {
+        max-width: 1140px; 
+    }
+
+    @include media($large-screen) {
+        max-width: 960px; 
+    }
+
+    @include media($tablet-screen) {
+        max-width: 720px; 
+    }
+
+    @include media($mobile-screen) {
+        max-width: 100%; 
+    }
+}
+
+// Styles for creating a flex container
+.flex {
+    display: flex; // Use flexbox for layout
+}
+
+.margin-20 {
+    margin: 20px 0;
+}
+
+.default-btn {
+    @include button;
+    background: #292F36;
+}
+
+.large-btn {
+    @include button;
+    background: #292F36;
+}
+
+.primary-btn {
+    @include button;
+    background: #CDA274;
+}
+
+.img-fluid {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }

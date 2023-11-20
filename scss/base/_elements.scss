@@ -1,0 +1,25 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers" as *;
+
+// Reset default margin, padding, and box-sizing for all elements
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+// Enable smooth scrolling for HTML elements
+html {
+    scroll-behavior: smooth;
+}
+
+// Style anchor (link) elements to be block-level and remove text decoration
+a {
+    display: block;
+    text-decoration: none;
+}
+
+// Remove default list item markers (bullets or numbers) for unordered lists
+ul {
+    list-style-type: none;
+}

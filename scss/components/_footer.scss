@@ -1,0 +1,80 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers"as *;
+
+// Styles for the card wrapper
+.footer_content {
+    @include flex;
+    justify-content: space-between;
+    gap: 101px;
+
+    @include media($large-screen) {
+        gap: 0px;
+    }
+    @include media($tablet-screen) {
+        flex-wrap: wrap;
+    }
+    h2 {
+        @include text-styles($primary-color, $font-medium, 25px, 400);
+        margin-bottom: 9px;
+    }
+
+    ul {
+
+        li {
+            a {
+                @include text-styles($secondary-color, $font-regular, 22px, 400);
+                margin: 17px 0;
+            }
+        }
+    }
+
+    &__icon {
+        width: 35%;
+
+        @include media($tablet-screen) {
+            width: 100%;
+            margin-bottom: 40px;
+            padding: 0 20px;
+        }
+
+        &__logo {
+            a {
+                @include flex;
+                gap: 10px;
+
+                h1 {
+                    @include text-styles($primary-color, $font-medium, 40px, 400);
+                }
+            }
+        }
+
+        p {
+            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            margin-top: 18px;
+        }
+
+        &__social {
+            gap: 54px;
+            margin-top: 31px;
+        }
+    }
+
+    &__pages,
+    &__services,
+    &__contact {
+        width: 20%;
+
+        @include media($tablet-screen) {
+            width: 33.33%;
+            padding: 0 20px;
+        }
+    }
+
+    &__contact {
+        h3 {
+            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            word-wrap: break-word;
+            margin: 17px 0;
+        }
+    }
+}

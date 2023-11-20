@@ -1,0 +1,101 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers"as *;
+
+// Styles for the navigation bar
+.navbar {
+    @include flex-center;
+    justify-content: space-between;
+    position: relative;
+
+    @include media($tablet-screen) {
+        padding: 0 20px;
+    }
+
+    &__logo {
+        cursor: pointer;
+
+        a {
+            @include flex-center;
+
+            img {
+                margin-right: 10px;
+
+                @include media($mobile-screen) {
+                    width: 70%;
+                    height: auto;
+                }
+            }
+
+            h1 {
+                @include text-styles($primary-color, $font-medium, 40px, 400);
+            }
+        }
+    }
+
+    &__menu {
+        @include flex;
+        justify-content: center;
+
+        &__horizontal_list {
+            img {
+                display: none;
+                height: auto;
+                width: 20px;
+
+                @include media($mobile-screen) {
+                    display: block;
+                }
+            }
+
+            ul {
+                @include flex;
+                gap: 25px;
+
+                @include media($tablet-screen) {
+                    gap: 10px;
+                }
+
+                @include media($mobile-screen) {
+                    display: none;
+                }
+
+                li {
+                    cursor: pointer;
+
+                    a {
+                        font-family: $font-regular;
+                        color: $primary-color;
+                        display: block;
+                        font-size: 20px;
+                        transition: 0.5s;
+                    }
+                }
+            }
+
+            @include media($mobile-screen) {
+                .hidden-menu {
+                    position: absolute;
+                    z-index: 2;
+                    padding: 20px;
+                }
+            }
+        }
+
+        #search-btn {
+            margin: 0px 0 0 31px;
+
+            @include media($tablet-screen) {
+                margin: 0px 0 0 10px;
+            }
+
+            @include media($mobile-screen) {
+                margin: 0px 0 0 35px;
+            }
+        }
+    }
+}
+
+// Show the element with the "show" class
+.show {
+    display: block !important;
+}

@@ -1,0 +1,64 @@
+// Import variables from "./variables"
+@use "./variables" as *;
+
+// Text styles mixin
+@mixin text-styles($color, $font-family, $font-size, $font-weight) {
+  color: $color;
+  font-family: $font-family;
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+// Button mixin
+@mixin button($bg-color: $primary-color, $text-color: $white-color) {
+  border-radius: 18px;
+  border: none;
+  box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
+  padding: 26px 54px;
+
+  a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    p {
+      font-size: 18px;
+      color: $text-color;
+      font-weight: 600;
+      margin: 0 !important;
+    }
+  }
+  background-color: $bg-color;
+}
+
+// Flex mixin
+@mixin flex {
+  display: flex;
+}
+
+
+// Button hover mixin
+@mixin button-hover($hover-bg-color, $hover-text-color) {
+  &:hover {
+    background-color: $hover-bg-color;
+    a {
+      color: $hover-text-color;
+    }
+  }
+}
+
+// Flex center mixin
+@mixin flex-center {
+  display: flex; // Set the element as a flex container
+  align-items: center; // Vertically center child elements
+  justify-content: center; // Horizontally center child elements
+}
+
+// mixin with a media query
+
+@mixin media($width) {
+  @media screen and (max-width: $width) {
+    @content;
+  }
+}

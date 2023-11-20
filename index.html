@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css"> <!-- Link to your main CSS file -->
+    <link rel="stylesheet" href="./css/slick.css">
+    <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="./jquery/navbar.js"></script> <!-- Link to your JavaScript file -->
+    <title>scss</title>
+</head>
+
+<body>
+    <!-- Header section with background color -->
+    <header class="margin-20">
+        <!-- Navigation menu -->
+        <nav class="navbar container">
+            <div class="navbar__logo">
+                <a href="#">
+                    <img src="images/icons/Logo.svg" alt="company logo" width="34" height="43">
+                    <h1>Interno</h1><!-- Logo image -->
+                </a>
+            </div>
+            <div class="navbar__menu">
+                <div class="navbar__menu__horizontal_list">
+                    <img id="menu-acces" src="./images/icons/icons8-menu-480.png" alt="menu"> <!-- Menu icon -->
+                    <ul class="hidden-menu">
+                        <li><a href="#">Home</a></li>
+                        <li>
+                            <a href="#">Pages</a>
+                        </li>
+                        <li>
+                            <a href="#">Services</a>
+                        </li>
+                        <li>
+                            <a href="#">Project</a>
+                        </li>
+                        <li>
+                            <a href="#">Blog</a>
+                        </li>
+                        <li>
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+                <div id="search-btn">
+                    <img src="./images/icons/Search.svg" alt="search button" width="23" height="24">
+                    <!-- Menu icon -->
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- Main content section -->
+    <main>
+        <section class="banner">
+            <div class="banner__image">
+                <img class="img-fluid " src="images/pictures/6ff1405bc9c6eff15df865f0cd6c8544.jpg" alt="background-image-section-1"
+                    width="1920" height="1042">
+            </div>
+            <div class="container">
+                <div class="banner__content">
+                    <h2>Let Your Home Be Unique</h2>
+                    <p>There are many variations of the passages of lorem Ipsum from available,variations of the
+                        passages.
+                    </p>
+                    <button class="default-btn">
+                        <a href="#">
+                            <p>Get Started</p>
+                            <img src="images/icons/Vector.svg" alt="Vector">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <section class="card_section">
+            <div class="container">
+                <div class="card flex">
+                    <div class="card__div">
+                        <h3>Project Plan</h3>
+                        <p>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <a>
+                            <h4>Read More</h4>
+                            <img src="images/icons/Vector.svg" alt="Vector">
+                        </a>
+                    </div>
+                    <div class="card__div">
+                        <h3>Interior Work</h3>
+                        <p>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <a>
+                            <h4>Read More</h4>
+                            <img src="images/icons/Vector.svg" alt="Vector">
+                        </a>
+                    </div>
+                    <div class="card__div">
+                        <h3>Realization</h3>
+                        <p>There are many variations of the passages of lorem Ipsum from
+                            available, majority.</p>
+                        <a>
+                            <h4>Read More</h4>
+                            <img src="images/icons/Vector.svg" alt="Vector">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact_us_section">
+            <div class="container">
+                <div class="contact_us">
+                    <div class="contact_us__content">
+                        <h3>We Create The Art
+                            Of Stylish Living
+                            Stylishly</h3>
+                        <p>It is a long established fact that a reader will be distracted by the of readable content of
+                            a
+                            page
+                            when lookings at its layouts the points of using
+                            that it has a more-or-less normal.</p>
+                        <div class="contact_us__content__call flex">
+                            <div class="contact_us__content__call__icon">
+                                <img src="/images/icons/Call-Icon.png" alt="call icon">
+                            </div>
+                            <div class="contact_us__content__call__number">
+                                <h4>012345678</h4>
+                                <h5>Call Us Anytime</h5>
+                            </div>
+                        </div>
+                        <button class="large-btn">
+                            <a href="#">
+                                <p>Get Free Estimate</p>
+                                <img src="images/icons/Vector.svg" alt="Vector">
+                            </a>
+                        </button>
+                    </div>
+                    <div class="contact_us__image">
+                        <img class="img-fluid" src="images/pictures/92b5503d4472a7c9150184f5a5dafa65.png" alt="contact us img"
+                            width="700" height="653">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="about_us_section">
+            <div class="container">
+                <div class="about_us">
+                    <h2>What the People Thinks About Us</h2>
+                    <div class="about_us__cards slider">
+                        <div class="about_us__cards__card">
+                            <div class="about_us__cards__card__top flex">
+                                <div class="about_us__cards__card__top__img">
+                                    <img src="images/pictures/8e32966a3167fe0e24adec222457809d.png" alt="Nattasha Mith"
+                                        width="77" height="77">
+                                </div>
+                                <div class="about_us__cards__card__top__text">
+                                    <h3>Nattasha Mith</h3>
+                                    <p>Sydney, USA</p>
+                                </div>
+                            </div>
+                            <p class="about_us__cards__card__bottom">Lorem Ipsum is simply dummy
+                                text of the typesetting industry.
+                                Ipsum has been.</p>
+                        </div>
+                        <div class="about_us__cards__card">
+                            <div class="about_us__cards__card__top flex">
+                                <div class="about_us__cards__card__top__img">
+                                    <img src="images/pictures/c96722f07cbf9ef05b3889e3b15fcf96.png"
+                                        alt="Raymond Galario" width="77" height="77">
+                                </div>
+                                <div class="about_us__cards__card__top__text">
+                                    <h3>Raymond Galario</h3>
+                                    <p>Sydney, Australia</p>
+                                </div>
+                            </div>
+                            <p class="about_us__cards__card__bottom">Lorem Ipsum is simply dummy
+                                text of the typesetting industry.
+                                Ipsum has been scrambled it
+                                to make a type book.</p>
+                        </div>
+                        <div class="about_us__cards__card">
+                            <div class="about_us__cards__card__top flex">
+                                <div class="about_us__cards__card__top__img">
+                                    <img src="images/pictures/5e1b3dd9668bca041a933a2d2950c443.png" alt="Benny Roll"
+                                        width="77" height="77">
+                                </div>
+                                <div class="about_us__cards__card__top__text">
+                                    <h3>Benny Roll</h3>
+                                    <p>Sydney, New York</p>
+                                </div>
+                            </div>
+                            <p class="about_us__cards__card__bottom">Lorem Ipsum is simply dummy
+                                text of the typesetting industry.
+                                Ipsum has been scrambled.</p>
+                        </div>
+                        <div class="about_us__cards__card">
+                            <div class="about_us__cards__card__top flex">
+                                <div class="about_us__cards__card__top__img">
+                                    <img src="images/pictures/c96722f07cbf9ef05b3889e3b15fcf96.png"
+                                        alt="Raymond Galario" width="77" height="77">
+                                </div>
+                                <div class="about_us__cards__card__top__text">
+                                    <h3>Raymond Galario</h3>
+                                    <p>Sydney, Australia</p>
+                                </div>
+                            </div>
+                            <p class="about_us__cards__card__bottom">Lorem Ipsum is simply dummy
+                                text of the typesetting industry.
+                                Ipsum has been scrambled it
+                                to make a type book.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="bands_section">
+            <div class="container">
+                <div class="brand">
+                    <div class="brand__logo">
+                        <img src="images/icons/01.svg" alt="brand logo 1" width="131.283" height="42.367">
+                    </div>
+                    <div class="brand__logo">
+                        <img src="images/icons/02.svg" alt="brand logo 2" width="102.32" height="102.32">
+                    </div>
+                    <div class="brand__logo">
+                        <img src="images/icons/03.svg" alt="brand logo 3" width="163.379" height="42.776">
+                    </div>
+                    <div class="brand__logo">
+                        <img src="images/icons/04.svg" alt="brand logo 4" width="144.701" height="44.063">
+                    </div>
+                    <div class="brand__logo">
+                        <img src="images/icons/05.svg" alt="brand logo 5" width="116.709" height="47.163">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="our_project_section">
+            <div class="container">
+                <div class="our_project">
+                    <h2>Follow Our Projects</h2>
+                    <p class="para_info">It is a long established fact that a reader will be distracted by the of
+                        readable
+                        content of page
+                        lookings at its layouts points.</p>
+                    <div class="our_project__cards">
+                        <div class="our_project__cards__card">
+                            <img class="our_project__image border-2 img-fluid"
+                                src="images/pictures/b997269d1ab52432ef83b1843d337b86.png" alt="Modern Kitchen"
+                                width="548" height="525">
+                            <div class="our_project__cards__card__info flex">
+                                <div class="our_project__cards__card__info__text">
+                                    <h3>Modern Kitchen</h3>
+                                    <h4>Decor / Artchitecture</h4>
+                                </div>
+                                <div class="our_project__cards__card__info__btn">
+                                    <a href="#">
+                                        <button class="btn">
+                                            <img src="./images/icons/arrow.png" alt="Vector 1">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our_project__cards__card">
+                            <img class="our_project__image border-1 img-fluid"
+                                src="images/pictures/62720e89ecfd8df8468499d05aa1c5fa.png" alt="Artchitecture"
+                                width="548" height="525">
+                            <div class="our_project__cards__card__info flex">
+                                <div class="our_project__cards__card__info__text">
+                                    <h3>Modern Kitchen</h3>
+                                    <h4>Decor / Artchitecture</h4>
+                                </div>
+                                <div class="our_project__cards__card__info__btn">
+                                    <a href="#">
+                                        <button class="btn">
+                                            <img src="./images/icons/arrow.png" alt="Vector 1">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our_project__cards__card">
+                            <img class="our_project__image border-3 img-fluid"
+                                src="images/pictures/5fe830d7429c719eb51f9e617f6f4218.png" alt="Decor" width="548"
+                                height="525">
+                            <div class="our_project__cards__card__info flex">
+                                <div class="our_project__cards__card__info__text">
+                                    <h3>Modern Kitchen</h3>
+                                    <h4>Decor / Artchitecture</h4>
+                                </div>
+                                <div class="our_project__cards__card__info__btn">
+                                    <a href="#">
+                                        <button class="btn">
+                                            <img src="./images/icons/arrow.png" alt="Vector 1">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="our_project__cards__card">
+                            <img class="our_project__image border-4 img-fluid"
+                                src="images/pictures/3b89cdc5858e9484c2f603e8b92add26.png" alt="Artchitecture"
+                                width="548" height="525">
+                            <div class="our_project__cards__card__info flex">
+                                <div class="our_project__cards__card__info__text">
+                                    <h3>Modern Kitchen</h3>
+                                    <h4>Decor / Artchitecture</h4>
+                                </div>
+                                <div class="our_project__cards__card__info__btn">
+                                    <a href="#">
+                                        <button class="btn">
+                                            <img src="./images/icons/arrow.png" alt="Vector 1">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="count">
+            <div class="container count__counter">
+                <div class="count__counter__text">
+                    <div>
+                        <h2>12</h2>
+                        <p>Years Of Experiance</p>
+                    </div>
+                </div>
+                <div class="count__counter__text">
+                    <div>
+                        <h2>85</h2>
+                        <p>Success Project</p>
+                    </div>
+                </div>
+                <div class="count__counter__text">
+                    <div>
+                        <h2>15</h2>
+                        <p>Active Project</p>
+                    </div>
+                </div>
+                <div class="count__counter__text">
+                    <div>
+                        <h2>95</h2>
+                        <p>Happy CUstomers</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="article_and_news_section">
+            <div class="container">
+                <div class="article_and_news">
+                    <h2>Articles & News</h2>
+                    <p class="article_and_news_info">It is a long established fact that a reader will be distracted by
+                        the
+                        of readable content of a page
+                        when lookings at its layouts the points of using.</p>
+                    <div class="flex article_and_news__cards">
+                        <div class="article_and_news__cards__card">
+                            <img class="article_and_news_img" src="images/pictures/4c4f8f5e4759944aaba98a3c6dd3e663.png"
+                                alt="article and news 1" width="340" height="289.267">
+                            <h1>Let’s Get Solution For Building Construction Work</h1>
+                            <div class="flex article_and_news__cards__card__info">
+                                <div class="article_and_news__cards__card__info__date">
+                                    <p>26 December,2022 </p>
+                                </div>
+                                <div class="article_and_news__cards__card__info_btn">
+                                    <a href="#">
+                                        <button class="btn">
+                                            <img src="./images/icons/arrow.png" alt="Vector 1">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article_and_news__cards__card">
+                            <img class="article_and_news_img" src="images/pictures/a20e02c510f4296121a71c3794cedbdf.png"
+                                alt="article and news 2" width="340" height="289.267">
+                            <h1>Low Cost Latest Invented Interior Designing
+                                Ideas.</h1>
+                            <div class="flex article_and_news__cards__card__info">
+                                <div class="article_and_news__cards__card__info__date">
+                                    <p>26 December,2022 </p>
+                                </div>
+                                <div class="article_and_news__cards__card__info_btn">
+                                    <a href="#">
+                                        <button class="btn">
+                                            <img src="./images/icons/arrow.png" alt="Vector 1">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="article_and_news__cards__card">
+                            <img class="article_and_news_img img-fluid" src="images/pictures/5668f8225c864831b442aa6df4248e05.png"
+                                alt="article and news 3" width="340" height="289.267">
+                            <h1>Best For Any Office & Business Interior
+                                Solution</h1>
+                            <div class="flex article_and_news__cards__card__info">
+                                <div class="article_and_news__cards__card__info__date">
+                                    <p>26 December,2022 </p>
+                                </div>
+                                <div class="article_and_news__cards__card__info_btn">
+                                    <a href="#">
+                                        <button class="btn">
+                                            <img src="./images/icons/arrow.png" alt="Vector 1">
+                                        </button>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="contact_section">
+            <div class="container">
+                <div class="contact">
+                    <h2>Wanna join the interno?</h2>
+                    <h3>It is a long established fact will be distracted.</h3>
+                    <button class="primary-btn">
+                        <a href="#">
+                            <p>contact with us</p>
+                            <img src="images/icons/Vector.png" alt="Vector">
+                        </a>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer section -->
+    <footer class="footer_section">
+        <div class="container">
+            <div class="footer_content flex">
+                <div class="footer_content__icon">
+                    <div class="footer_content__icon__logo">
+                        <a class="flex" href="#">
+                            <img src="images/icons/Logo.svg" alt="company logo">
+                            <h1>Interno</h1><!-- Logo image -->
+                        </a>
+                    </div>
+                    <p>It is a long established fact that a reader will be distracted lookings.</p>
+                    <div class="footer_content__icon__social flex">
+                        <img src="./images/icons/.png" alt="facebook">
+                        <img src="./images/icons/.png" alt="twitter">
+                        <img src="./images/icons/.png" alt="linkedin">
+                        <img src="./images/icons/.png" alt="instagram">
+
+                    </div>
+                </div>
+                <div class="footer_content__pages">
+                    <h2>Pages</h2>
+                    <ul class="">
+                        <li><a href="#">Pages</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Project</a></li>
+                        <li><a href="#">Blod</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content__services">
+                    <h2>Services</h2>
+                    <ul class="">
+                        <li><a href="#">Kitchen</a></li>
+                        <li><a href="#">Living Area</a></li>
+                        <li><a href="#">Bathroom</a></li>
+                        <li><a href="#">Dinning Hall</a></li>
+                        <li><a href="#">Bedroom</a></li>
+                    </ul>
+                </div>
+                <div class="footer_content__contact">
+                    <h2>Contact</h2>
+                    <h3>55 East Birchwood Ave. Brooklyn, New York 11201 </h3>
+                    <h3>contact@interno.com</h3>
+                    <h3>(123) 456 - 7890</h3>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./jquery/slick.min.js"></script>
+    <script src="./jquery/slider.js"></script>
+</body>
+
+</html>

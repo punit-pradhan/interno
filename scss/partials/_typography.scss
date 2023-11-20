@@ -1,0 +1,23 @@
+// Define font sizes for different headings
+$font-size-h1: 50px;
+$font-size-h2: 40px;
+$font-size-h3: 30px;
+$font-size-h4: 24px;
+$font-size-h5: 20px;
+$font-size-h6: 18px;
+
+// Define font faces using @font-face
+@font-face {
+  font-family: Jost-Regular;
+  src: url(../../fonts/Jost-Regular.ttf);
+}
+
+@font-face {
+  font-family: DM-Italic;
+  src: url(../../fonts/DMSerifDisplay-Italic.ttf);
+}
+
+@font-face {
+  font-family: DM-Regular;
+  src: url(../../fonts/DMSerifDisplay-Regular.ttf);
+}

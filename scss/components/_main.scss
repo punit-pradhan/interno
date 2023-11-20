@@ -1,0 +1,602 @@
+// Import styles from "../partials/importers"
+@use "../partials/importers"as *;
+
+// Define the main section
+.banner {
+    height: 900px;
+    position: relative;
+
+    &__image {
+        height: inherit;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: 100% 45%;
+            border-radius: 0 0 0 335px;
+
+            @include media($extra-large-screen) {
+                object-position: 100% 50%;
+            }
+
+            @include media($tablet-screen) {
+                border-radius: 0px;
+            }
+        }
+    }
+
+    &__content {
+        position: absolute;
+        top: 30%;
+        max-width: 570px;
+
+        @include media($extra-large-screen) {
+            top: 25%;
+        }
+
+        @include media($tablet-screen) {
+            padding-left: 20px;
+            max-width: 80%;
+        }
+
+        h2 {
+            @include text-styles($primary-color, $font-medium, 84px, 400);
+            line-height: 95px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            margin-bottom: 21px;
+
+            @include media($tablet-screen) {
+                color: black;
+            }
+        }
+    }
+}
+
+.card {
+    padding: 84px 0;
+    margin: 95px 0;
+
+    @include media($tablet-screen) {
+        flex-wrap: wrap;
+        @include flex-center;
+    }
+
+    &__div {
+        padding: 21px;
+
+        @include media($tablet-screen) {
+            width: 50%;
+            margin-bottom: 20px
+        }
+
+        @include media($mobile-screen) {
+            width: 100%;
+        }
+
+        h3 {
+            @include text-styles($primary-color, $font-medium, 25px, 500);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        p {
+            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            text-align: center;
+            margin-bottom: 52px;
+        }
+
+        a {
+            @include flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: center;
+
+            h4 {
+                @include text-styles($secondary-color, $font-regular, 22px, 400);
+            text-align: center;
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+.contact_us {
+    @include flex;
+    gap: 75px;
+    margin-bottom: 200px;
+
+    @include media($tablet-screen) {
+        flex-direction: column-reverse;
+    }
+
+    &__content {
+        width: 472px;
+        padding: 43px 0 0 0;
+
+        @include media($extra-large-screen) {
+            width: 50%;
+        }
+
+        @include media($tablet-screen) {
+            width: 100%;
+            padding: 0 20px;
+        }
+
+        h3 {
+            margin-bottom: 33px;
+            @include text-styles($primary-color, $font-medium, 50px, 400);
+            letter-spacing: 1px;
+        }
+
+        p {
+            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            margin-bottom: 45px;
+            letter-spacing: 0.22px;
+        }
+
+        &__call {
+            align-items: center;
+            gap: 15px;
+            margin-bottom: 47px;
+
+            &__number {
+                h4 {
+                    @include text-styles($secondary-color, $font-regular, 24px, 700);
+                }
+
+                h5 {
+                    @include text-styles($secondary-color, $font-regular, 22px, 400);
+                }
+            }
+        }
+    }
+
+    &__image {
+        height: 700px;
+        width: 653px;
+
+        @include media($extra-large-screen) {
+            width: 50%;
+            height: auto;
+        }
+
+        @include media($tablet-screen) {
+            height: 400px;
+            padding: 0 20px;
+            width: 100%;
+        }
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 0 35% 0 20%;
+
+            @include media($extra-large-screen) {
+                border-radius: 0 50px;
+            }
+        }
+    }
+}
+
+.about_us {
+    background-color: $Primary-3;
+    padding: 88px 25px;
+    border-radius: 50px;
+
+    h2 {
+        @include text-styles($primary-color, $font-medium, 50px, 400);
+        text-align: center;
+        width: 55%;
+        margin: 0 auto 38px auto;
+
+        @include media($mobile-screen) {
+            width: 80%;
+        }
+
+    }
+
+    &__cards {
+        padding: 20px;
+
+        .slick-prev {
+            display: none;
+            position: absolute;
+            left: 10px;
+            top: 50%;
+
+            img {
+                transform: rotate(180deg);
+            }
+        }
+
+        .slick-next {
+            display: none;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+        }
+
+        ul.slick-dots li {
+            background-color: grey;
+            border-radius: 30px;
+        }
+
+        ul.slick-dots li.slick-active {
+            background-color: black;
+        }
+
+        &__card {
+            margin: 0 10px;
+            border-radius: 20px;
+            padding: 54px 37px;
+            background-color: $white-color;
+            height: 356.2px !important;
+
+            @include media($extra-large-screen) {
+                height: 440px !important;
+            }
+
+            @include media($tablet-screen) {
+                height: 290px !important;
+            }
+
+            @include media($mobile-screen) {
+                height: 400px !important;
+            }
+
+            &__top {
+                align-items: center;
+                gap: 23px;
+                margin-bottom: 25px;
+
+                &__img {
+                    img {
+                        width: 60px;
+                        height: 60px;
+                        object-fit: cover;
+                        object-position: 100%;
+                        border-radius: 50%;
+                    }
+                }
+
+                &__text {
+                    font-size: 22px;
+
+                    h3 {
+                        @include text-styles($primary-color, $font-medium, 25px, 400);
+                    }
+
+                    p {
+                        @include text-styles($secondary-color, $font-regular, 18px, 400);
+                    }
+                }
+            }
+
+            &__bottom {
+                @include text-styles($secondary-color, $font-regular, 22px, 400);
+            }
+        }
+    }
+}
+
+.brand {
+    @include flex;
+    gap: 108px;
+    margin: 150px 0;
+
+    @include media($extra-large-screen) {
+        gap: 0px;
+    }
+
+    @include media($large-screen) {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    &__logo {
+        width: 25%;
+        @include flex-center;
+
+        @include media($large-screen) {
+            width: 33.33%;
+            margin-bottom: 20px;
+        }
+
+        @include media($mobile-screen) {
+            width: 100%;
+            margin-bottom: 40px;
+        }
+    }
+}
+
+.our_project {
+    h2 {
+        text-align: center;
+        @include text-styles($Primary-2, $font-medium, 50px, 400);
+        margin-bottom: 8px;
+    }
+
+    .para_info {
+        @include text-styles($secondary-color, $font-regular, 22px, 400);
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 37px;
+        text-align: center;
+    }
+
+    &__cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+
+        &__card {
+            width: 48%;
+            margin-top: 56px;
+
+            @include media($mobile-screen) {
+                width: 80%;
+                margin: 0 auto;
+                margin-bottom: 40px;
+            }
+
+            .our_project__image {
+                width: 100%;
+                height: 525px;
+                object-fit: cover;
+
+                @include media($mobile-screen) {
+                    height: auto;
+                }
+            }
+
+            &__info {
+                width: 100%;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 24px;
+
+                &__text {
+                    h3 {
+                        @include text-styles($Primary-2, $font-medium, 25px, 400);
+                    }
+
+                    h4 {
+                        @include text-styles($secondary-color, $font-regular, 22px, 400);
+                    }
+                }
+
+                &__btn {
+                    a {
+                        .btn {
+                            border: none;
+                            border-radius: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.border-1 {
+    border-radius: 90px 0 0 0;
+}
+
+.border-2 {
+    border-radius: 0 90px 0 0;
+}
+
+.border-3 {
+    border-radius: 0 0 90px 0;
+}
+
+.border-4 {
+    border-radius: 0 0 0 90px;
+}
+
+.count {
+    background-color: $Primary-3;
+    margin: 150px 0;
+
+    &__counter {
+        @include flex;
+        padding: 151px 0rem;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 76px;
+
+        @include media($large-screen) {
+            gap: 0px;
+            justify-content: space-between;
+        }
+
+        @include media($mobile-screen) {
+            flex-wrap: wrap;
+            @include flex-center;
+            justify-content: space-around;
+        }
+
+        &__text {
+            // width: calc(25% - 57px);
+            @include flex;
+
+
+            @include media($large-screen) {
+                border-right: 1px solid $Primary-1;
+                padding-right: 20px;
+            }
+
+            @include media($mobile-screen) {
+                width: 40%;
+                justify-content: center;
+            }
+
+            &::after {
+                content: '';
+                margin-left: 54px;
+                margin-top: 28px;
+                width: 1px;
+                background-color: $Primary-1;
+
+                @include media($large-screen) {
+                    display: none;
+                }
+            }
+
+            h2 {
+                @include text-styles($Primary-1, $font-medium, 85px, 400);
+                text-align: center;
+                margin-bottom: 16px;
+            }
+
+            p {
+                @include text-styles($secondary-color, $font-regular, 22px, 400);
+                text-align: center;
+            }
+
+            &:nth-child(4) {
+                @include media($large-screen) {
+                    border-right: 0px;
+                    margin-right: 0px;
+                    padding-right: 0px;
+                }
+
+                @include media($mobile-screen) {
+                    border-right: 1px solid $Primary-1;
+
+                }
+
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+.article_and_news {
+    h2 {
+        @include text-styles($primary-color, $font-medium, 50px, 400);
+        text-align: center;
+        margin-bottom: 12px;
+    }
+
+    .article_and_news_info {
+        @include text-styles($secondary-color, $font-regular, 22px, 400);
+        width: 66%;
+        margin: 0 auto;
+        text-align: center;
+        line-height: 150%;
+        margin-bottom: 52px;
+
+        @include media($tablet-screen) {
+            width: 90%;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        gap: 27px;
+
+        @include media($tablet-screen) {
+            gap: 0px;
+            flex-wrap: wrap;
+        }
+
+        &__card {
+            width: 33.33%;
+            padding: 21px 20px;
+            border-radius: 62px;
+            border: 1px solid #E7E7E7;
+            box-shadow: 0px 10px 30px 0px rgba(255, 255, 255, 0.25);
+
+            @include media($tablet-screen) {
+                width: 90%;
+                margin: 20px auto;
+            }
+
+            .article_and_news_img {
+                width: 100%;
+                object-fit: cover;
+                height: 290px;
+                border-radius: 35px 35px 0 0;
+
+                @include media($tablet-screen) {
+                    height: auto;
+                }
+            }
+
+            h1 {
+                margin-top: 21px;
+                margin-bottom: 30px;
+                @include text-styles($primary-color, $font-medium, 25px, 400);
+            }
+
+            &__info {
+                margin-bottom: 21px;
+                align-items: center;
+                justify-content: space-between;
+
+                &__date {
+                    p {
+                        @include text-styles($secondary-color, $font-regular, 16px, 400);
+                    }
+                }
+
+                &_btn {
+                    a {
+                        .btn {
+                            border: none;
+                            border-radius: 50%;
+
+                            img {
+                                width: 50px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &:hover {
+                background-color: $Primary-3;
+
+                .article_and_news__cards__card__info_btn a .btn img {
+                    filter: invert(1);
+                }
+            }
+        }
+    }
+}
+
+.contact {
+    background-color: $primary-color;
+    text-align: center;
+    padding: 80px 315px;
+    margin: 202px 0 135px 0;
+    border-radius: 70px;
+
+    @include media($large-screen) {
+        padding: 80px 150px;
+    }
+
+    @include media($mobile-screen) {
+        padding: 50px 40px;
+        border-radius: 0px;
+    }
+
+    h2 {
+        @include text-styles($white-color, $font-medium, 50px, 400);
+    }
+
+    h3 {
+        margin-top: 11px;
+        @include text-styles($white-color, $font-regular, 22px, 400);
+        margin-bottom: 32px;
+    }
+}
