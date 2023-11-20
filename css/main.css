@@ -713,7 +713,7 @@ ul {
   text-align: center;
   margin-bottom: 16px;
 }
-.count__counter__text p {
+.count__counter__text h3 {
   color: #4D5053;
   font-family: Jost-Regular;
   font-size: 22px;
@@ -927,6 +927,12 @@ ul {
   .footer_content__pages, .footer_content__services, .footer_content__contact {
     width: 33.33%;
     padding: 0 20px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .footer_content__pages, .footer_content__services, .footer_content__contact {
+    width: 100%;
+    margin: 40px 0;
   }
 }
 .footer_content__contact h3 {

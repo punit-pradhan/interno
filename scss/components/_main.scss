@@ -455,7 +455,7 @@
                 margin-bottom: 16px;
             }
 
-            p {
+            h3 {
                 @include text-styles($secondary-color, $font-regular, 22px, 400);
                 text-align: center;
             }

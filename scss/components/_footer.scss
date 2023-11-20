@@ -10,9 +10,11 @@
     @include media($large-screen) {
         gap: 0px;
     }
+
     @include media($tablet-screen) {
         flex-wrap: wrap;
     }
+
     h2 {
         @include text-styles($primary-color, $font-medium, 25px, 400);
         margin-bottom: 9px;
@@ -36,7 +38,7 @@
             margin-bottom: 40px;
             padding: 0 20px;
         }
-
+        
         &__logo {
             a {
                 @include flex;
@@ -67,6 +69,11 @@
         @include media($tablet-screen) {
             width: 33.33%;
             padding: 0 20px;
+        }
+
+        @include media($mobile-screen) {
+            width: 100%;
+            margin: 40px 0
         }
     }
 
