@@ -269,6 +269,11 @@ ul {
     max-width: 80%;
   }
 }
+@media screen and (max-width: 576px) {
+  .banner__content {
+    top: 15%;
+  }
+}
 .banner__content h2 {
   color: #292F36;
   font-family: DM-Regular;
