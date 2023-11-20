@@ -271,7 +271,7 @@ ul {
 }
 @media screen and (max-width: 576px) {
   .banner__content {
-    top: 15%;
+    top: 10%;
   }
 }
 .banner__content h2 {

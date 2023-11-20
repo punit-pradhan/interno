@@ -40,7 +40,7 @@
             max-width: 80%;
         }
         @include media($mobile-screen) {
-            top: 15%;
+            top: 10%;
         }
         h2 {
             @include text-styles($primary-color, $font-medium, 84px, 400);
