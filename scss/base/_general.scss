@@ -35,16 +35,20 @@
 .default-btn {
     @include button;
     background: #292F36;
+    width: 225px;
 }
 
 .large-btn {
     @include button;
     background: #292F36;
+    width: 290px;
 }
 
 .primary-btn {
     @include button;
     background: #CDA274;
+    width: 260px;
+    margin: 0 auto;
 }
 
 .img-fluid {
@@ -52,3 +56,7 @@
     max-width: 100%;
     height: auto;
   }
+
+  .bold {
+    @include text-styles($secondary-color, $font-regular, 22px, 600, 1.25);
+}

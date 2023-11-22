@@ -16,7 +16,7 @@
     }
 
     h2 {
-        @include text-styles($primary-color, $font-medium, 25px, 400);
+        @include text-styles($primary-color, $font-medium, 25px, 400, 1.25);
         margin-bottom: 9px;
     }
 
@@ -24,7 +24,7 @@
 
         li {
             a {
-                @include text-styles($secondary-color, $font-regular, 22px, 400);
+                @include text-styles($secondary-color, $font-regular, 22px, 400, 3);
                 margin: 17px 0;
             }
         }
@@ -41,17 +41,12 @@
         
         &__logo {
             a {
-                @include flex;
-                gap: 10px;
-
-                h1 {
-                    @include text-styles($primary-color, $font-medium, 40px, 400);
-                }
+                @include flex-center;
             }
         }
 
         p {
-            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             margin-top: 18px;
         }
 
@@ -79,7 +74,7 @@
 
     &__contact {
         h3 {
-            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             word-wrap: break-word;
             margin: 17px 0;
         }

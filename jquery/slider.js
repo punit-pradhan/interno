@@ -1,4 +1,5 @@
-$(function() {
+jQuery.noConflict();
+jQuery(function($) {
   $('.slider').slick({
     dots: true,
     infinite: true,

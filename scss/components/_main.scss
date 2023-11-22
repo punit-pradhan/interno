@@ -39,23 +39,26 @@
             padding-left: 20px;
             max-width: 80%;
         }
+
         @include media($mobile-screen) {
             top: 10%;
         }
-        h2 {
-            @include text-styles($primary-color, $font-medium, 84px, 400);
+
+        h1 {
+            @include text-styles($primary-color, $font-medium, 84px, 400, 1.25);
             line-height: 95px;
             margin-bottom: 10px;
         }
 
         p {
-            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             margin-bottom: 21px;
 
             @include media($tablet-screen) {
                 color: black;
             }
         }
+
     }
 }
 
@@ -81,13 +84,13 @@
         }
 
         h3 {
-            @include text-styles($primary-color, $font-medium, 25px, 500);
+            @include text-styles($primary-color, $font-medium, 25px, 500, 1.25);
             text-align: center;
             margin-bottom: 20px;
         }
 
         p {
-            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             text-align: center;
             margin-bottom: 52px;
         }
@@ -98,10 +101,12 @@
             align-items: center;
             justify-content: center;
 
-            h4 {
-                @include text-styles($secondary-color, $font-regular, 22px, 400);
-            text-align: center;
+            .bold {
                 font-weight: 600;
+                font-size: 18px;
+                margin-bottom: 0;
+                line-height: 1.25;
+                text-align: center;
             }
         }
     }
@@ -131,12 +136,12 @@
 
         h3 {
             margin-bottom: 33px;
-            @include text-styles($primary-color, $font-medium, 50px, 400);
+            @include text-styles($primary-color, $font-medium, 50px, 400, 1.25);
             letter-spacing: 1px;
         }
 
         p {
-            @include text-styles($secondary-color, $font-regular, 22px, 400);
+            @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             margin-bottom: 45px;
             letter-spacing: 0.22px;
         }
@@ -147,12 +152,13 @@
             margin-bottom: 47px;
 
             &__number {
-                h4 {
-                    @include text-styles($secondary-color, $font-regular, 24px, 700);
+                .bold {
+                    @include text-styles($secondary-color, $font-regular, 24px, 700, 1.5);
                 }
 
-                h5 {
-                    @include text-styles($secondary-color, $font-regular, 22px, 400);
+                p {
+                    @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
+                    margin: 0;
                 }
             }
         }
@@ -192,7 +198,7 @@
     border-radius: 50px;
 
     h2 {
-        @include text-styles($primary-color, $font-medium, 50px, 400);
+        @include text-styles($primary-color, $font-medium, 50px, 400, 1.25);
         text-align: center;
         width: 55%;
         margin: 0 auto 38px auto;
@@ -270,18 +276,18 @@
                 &__text {
                     font-size: 22px;
 
-                    h3 {
-                        @include text-styles($primary-color, $font-medium, 25px, 400);
+                    .bold {
+                        @include text-styles($primary-color, $font-medium, 25px, 400, 1.5);
                     }
 
                     p {
-                        @include text-styles($secondary-color, $font-regular, 18px, 400);
+                        @include text-styles($secondary-color, $font-regular, 18px, 400, 1.5);
                     }
                 }
             }
 
             &__bottom {
-                @include text-styles($secondary-color, $font-regular, 22px, 400);
+                @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             }
         }
     }
@@ -289,12 +295,12 @@
 
 .brand {
     @include flex;
-    gap: 108px;
     margin: 150px 0;
+    justify-content: center;
+    flex-wrap: wrap;
 
-    @include media($extra-large-screen) {
-        gap: 0px;
-    }
+    // @include media($extra-large-screen) {
+    // }
 
     @include media($large-screen) {
         justify-content: center;
@@ -302,7 +308,7 @@
     }
 
     &__logo {
-        width: 25%;
+        width: 20%;
         @include flex-center;
 
         @include media($large-screen) {
@@ -320,12 +326,12 @@
 .our_project {
     h2 {
         text-align: center;
-        @include text-styles($Primary-2, $font-medium, 50px, 400);
+        @include text-styles($Primary-2, $font-medium, 50px, 400, 1.25);
         margin-bottom: 8px;
     }
 
     .para_info {
-        @include text-styles($secondary-color, $font-regular, 22px, 400);
+        @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
         width: 60%;
         margin: 0 auto;
         margin-bottom: 37px;
@@ -364,21 +370,18 @@
                 padding-top: 24px;
 
                 &__text {
-                    h3 {
-                        @include text-styles($Primary-2, $font-medium, 25px, 400);
+                    .bold {
+                        @include text-styles($Primary-2, $font-medium, 25px, 400, 1.25);
                     }
 
-                    h4 {
-                        @include text-styles($secondary-color, $font-regular, 22px, 400);
+                    p {
+                        @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
                     }
                 }
 
                 &__btn {
-                    a {
-                        .btn {
-                            border: none;
-                            border-radius: 50%;
-                        }
+                    .btn {
+                        border-radius: 50%;
                     }
                 }
             }
@@ -407,32 +410,19 @@
     margin: 150px 0;
 
     &__counter {
-        @include flex;
+        flex-wrap: wrap;
+        @include flex-center;
+        justify-content: space-around;
         padding: 151px 0rem;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 76px;
-
-        @include media($large-screen) {
-            gap: 0px;
-            justify-content: space-between;
-        }
-
-        @include media($mobile-screen) {
-            flex-wrap: wrap;
-            @include flex-center;
-            justify-content: space-around;
-        }
 
         &__text {
-            // width: calc(25% - 57px);
-            @include flex;
+            width: 25%;
+            position: relative;
 
-
-            @include media($large-screen) {
-                border-right: 1px solid $Primary-1;
-                padding-right: 20px;
-            }
+            // @include media($large-screen) {
+            //     border-right: 1px solid $Primary-1;
+            //     padding-right: 20px;
+            // }
 
             @include media($mobile-screen) {
                 width: 40%;
@@ -440,40 +430,31 @@
             }
 
             &::after {
-                content: '';
-                margin-left: 54px;
-                margin-top: 28px;
+                position: absolute;
+                content: "";
+                top: 30px;
+                bottom: 0;
+                right: 0;
                 width: 1px;
                 background-color: $Primary-1;
 
-                @include media($large-screen) {
-                    display: none;
-                }
+                // @include media($large-screen) {
+                //     display: none;
+                // }
             }
 
             h2 {
-                @include text-styles($Primary-1, $font-medium, 85px, 400);
+                @include text-styles($Primary-1, $font-medium, 85px, 400, 1.25);
                 text-align: center;
                 margin-bottom: 16px;
             }
 
             h3 {
-                @include text-styles($secondary-color, $font-regular, 22px, 400);
+                @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
                 text-align: center;
             }
 
             &:nth-child(4) {
-                @include media($large-screen) {
-                    border-right: 0px;
-                    margin-right: 0px;
-                    padding-right: 0px;
-                }
-
-                @include media($mobile-screen) {
-                    border-right: 1px solid $Primary-1;
-
-                }
-
                 &::after {
                     display: none;
                 }
@@ -484,13 +465,13 @@
 
 .article_and_news {
     h2 {
-        @include text-styles($primary-color, $font-medium, 50px, 400);
+        @include text-styles($primary-color, $font-medium, 50px, 400, 1.25);
         text-align: center;
         margin-bottom: 12px;
     }
 
     .article_and_news_info {
-        @include text-styles($secondary-color, $font-regular, 22px, 400);
+        @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
         width: 66%;
         margin: 0 auto;
         text-align: center;
@@ -534,10 +515,10 @@
                 }
             }
 
-            h1 {
+            .bold {
                 margin-top: 21px;
                 margin-bottom: 30px;
-                @include text-styles($primary-color, $font-medium, 25px, 400);
+                @include text-styles($primary-color, $font-medium, 25px, 400, 1.25);
             }
 
             &__info {
@@ -547,7 +528,7 @@
 
                 &__date {
                     p {
-                        @include text-styles($secondary-color, $font-regular, 16px, 400);
+                        @include text-styles($secondary-color, $font-regular, 16px, 400, 1.5);
                     }
                 }
 
@@ -558,7 +539,7 @@
                             border-radius: 50%;
 
                             img {
-                                width: 50px;
+                                width: 52px;
                             }
                         }
                     }
@@ -593,12 +574,12 @@
     }
 
     h2 {
-        @include text-styles($white-color, $font-medium, 50px, 400);
+        @include text-styles($white-color, $font-medium, 50px, 400, 1.25);
     }
 
     h3 {
         margin-top: 11px;
-        @include text-styles($white-color, $font-regular, 22px, 400);
+        @include text-styles($white-color, $font-regular, 22px, 400, 1.5);
         margin-bottom: 32px;
     }
 }

@@ -18,16 +18,10 @@
             @include flex-center;
 
             img {
-                margin-right: 10px;
-
                 @include media($mobile-screen) {
-                    width: 70%;
-                    height: auto;
+                    // width: 70%;
+                    // height: auto;
                 }
-            }
-
-            h1 {
-                @include text-styles($primary-color, $font-medium, 40px, 400);
             }
         }
     }

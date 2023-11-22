@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/main.css"> <!-- Link to your main CSS file -->
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./jquery/navbar.js"></script> <!-- Link to your JavaScript file -->
     <title>scss</title>
 </head>
@@ -18,13 +19,12 @@
         <nav class="navbar container">
             <div class="navbar__logo">
                 <a href="#">
-                    <img src="images/icons/Logo.svg" alt="company logo" width="34" height="43">
-                    <h1>Interno</h1><!-- Logo image -->
+                    <img src="images/icons/Logo.svg" alt="company logo" width="177" height="50">
                 </a>
             </div>
             <div class="navbar__menu">
                 <div class="navbar__menu__horizontal_list">
-                    <img id="menu-acces" src="./images/icons/icons8-menu-480.png" alt="menu"> <!-- Menu icon -->
+                    <img id="menu-acces" src="./images/icons/icons8-menu-480.svg" alt="menu"> <!-- Menu icon -->
                     <ul class="hidden-menu">
                         <li><a href="#">Home</a></li>
                         <li>
@@ -55,21 +55,19 @@
     <main>
         <section class="banner">
             <div class="banner__image">
-                <img class="img-fluid " src="images/pictures/6ff1405bc9c6eff15df865f0cd6c8544.jpg" alt="background-image-section-1"
-                    width="1920" height="1042">
+                <img class="img-fluid " src="images/pictures/6ff1405bc9c6eff15df865f0cd6c8544.WEBP"
+                    alt="background-image-section-1" width="1920" height="1042">
             </div>
             <div class="container">
                 <div class="banner__content">
-                    <h2>Let Your Home Be Unique</h2>
+                    <h1>Let Your Home Be Unique</h1>
                     <p>There are many variations of the passages of lorem Ipsum from available,variations of the
                         passages.
                     </p>
-                    <button class="default-btn">
-                        <a href="#">
-                            <p>Get Started</p>
-                            <img src="images/icons/Vector.svg" alt="Vector">
-                        </a>
-                    </button>
+                    <a href="#" class="default-btn">
+                        <p>Get Started</p>
+                        <img src="images/icons/Vector.svg" alt="Vector" width="15" height="13">
+                    </a>
                 </div>
             </div>
         </section>
@@ -81,8 +79,8 @@
                         <p>There are many variations of the passages of lorem Ipsum from
                             available, majority.</p>
                         <a>
-                            <h4>Read More</h4>
-                            <img src="images/icons/Vector.svg" alt="Vector">
+                            <p class="bold">Read More</p>
+                            <img src="images/icons/Vector.svg" alt="Vector" width="15" height="13">
                         </a>
                     </div>
                     <div class="card__div">
@@ -90,8 +88,8 @@
                         <p>There are many variations of the passages of lorem Ipsum from
                             available, majority.</p>
                         <a>
-                            <h4>Read More</h4>
-                            <img src="images/icons/Vector.svg" alt="Vector">
+                            <p class="bold">Read More</p>
+                            <img src="images/icons/Vector.svg" alt="Vector" width="15" height="13">
                         </a>
                     </div>
                     <div class="card__div">
@@ -99,8 +97,8 @@
                         <p>There are many variations of the passages of lorem Ipsum from
                             available, majority.</p>
                         <a>
-                            <h4>Read More</h4>
-                            <img src="images/icons/Vector.svg" alt="Vector">
+                            <p class="bold">Read More</p>
+                            <img src="images/icons/Vector.svg" alt="Vector" width="15" height="13">
                         </a>
                     </div>
                 </div>
@@ -120,23 +118,21 @@
                             that it has a more-or-less normal.</p>
                         <div class="contact_us__content__call flex">
                             <div class="contact_us__content__call__icon">
-                                <img src="./images/icons/Call-Icon.png" alt="call icon">
+                                <img src="./images/icons/Call-Icon.WEBP" alt="call icon">
                             </div>
                             <div class="contact_us__content__call__number">
-                                <h4>012345678</h4>
-                                <h5>Call Us Anytime</h5>
+                                <p class="bold">012345678</p>
+                                <p>Call Us Anytime</p>
                             </div>
                         </div>
-                        <button class="large-btn">
-                            <a href="#">
-                                <p>Get Free Estimate</p>
-                                <img src="images/icons/Vector.svg" alt="Vector">
-                            </a>
-                        </button>
+                        <a href="#" class="large-btn">
+                            <p>Get Free Estimate</p>
+                            <img src="images/icons/Vector.svg" alt="Vector" width="15" height="13">
+                        </a>
                     </div>
                     <div class="contact_us__image">
-                        <img class="img-fluid" src="images/pictures/92b5503d4472a7c9150184f5a5dafa65.png" alt="contact us img"
-                            width="700" height="653">
+                        <img class="img-fluid" src="images/pictures/92b5503d4472a7c9150184f5a5dafa65.WEBP"
+                            alt="contact us img" width="700" height="653">
                     </div>
                 </div>
             </div>
@@ -149,11 +145,11 @@
                         <div class="about_us__cards__card">
                             <div class="about_us__cards__card__top flex">
                                 <div class="about_us__cards__card__top__img">
-                                    <img src="images/pictures/8e32966a3167fe0e24adec222457809d.png" alt="Nattasha Mith"
+                                    <img src="images/pictures/8e32966a3167fe0e24adec222457809d.WEBP" alt="Nattasha Mith"
                                         width="77" height="77">
                                 </div>
                                 <div class="about_us__cards__card__top__text">
-                                    <h3>Nattasha Mith</h3>
+                                    <p class="bold">Nattasha Mith</p>
                                     <p>Sydney, USA</p>
                                 </div>
                             </div>
@@ -164,11 +160,11 @@
                         <div class="about_us__cards__card">
                             <div class="about_us__cards__card__top flex">
                                 <div class="about_us__cards__card__top__img">
-                                    <img src="images/pictures/c96722f07cbf9ef05b3889e3b15fcf96.png"
+                                    <img src="images/pictures/c96722f07cbf9ef05b3889e3b15fcf96.WEBP"
                                         alt="Raymond Galario" width="77" height="77">
                                 </div>
                                 <div class="about_us__cards__card__top__text">
-                                    <h3>Raymond Galario</h3>
+                                    <p class="bold">Raymond Galario</p>
                                     <p>Sydney, Australia</p>
                                 </div>
                             </div>
@@ -180,11 +176,11 @@
                         <div class="about_us__cards__card">
                             <div class="about_us__cards__card__top flex">
                                 <div class="about_us__cards__card__top__img">
-                                    <img src="images/pictures/5e1b3dd9668bca041a933a2d2950c443.png" alt="Benny Roll"
+                                    <img src="images/pictures/5e1b3dd9668bca041a933a2d2950c443.WEBP" alt="Benny Roll"
                                         width="77" height="77">
                                 </div>
                                 <div class="about_us__cards__card__top__text">
-                                    <h3>Benny Roll</h3>
+                                    <p class="bold">Benny Roll</p>
                                     <p>Sydney, New York</p>
                                 </div>
                             </div>
@@ -195,11 +191,11 @@
                         <div class="about_us__cards__card">
                             <div class="about_us__cards__card__top flex">
                                 <div class="about_us__cards__card__top__img">
-                                    <img src="images/pictures/c96722f07cbf9ef05b3889e3b15fcf96.png"
+                                    <img src="images/pictures/c96722f07cbf9ef05b3889e3b15fcf96.WEBP"
                                         alt="Raymond Galario" width="77" height="77">
                                 </div>
                                 <div class="about_us__cards__card__top__text">
-                                    <h3>Raymond Galario</h3>
+                                    <p class="bold">Raymond Galario</p>
                                     <p>Sydney, Australia</p>
                                 </div>
                             </div>
@@ -244,72 +240,64 @@
                     <div class="our_project__cards">
                         <div class="our_project__cards__card">
                             <img class="our_project__image border-2 img-fluid"
-                                src="images/pictures/b997269d1ab52432ef83b1843d337b86.png" alt="Modern Kitchen"
+                                src="images/pictures/b997269d1ab52432ef83b1843d337b86.WEBP" alt="Modern Kitchen"
                                 width="548" height="525">
                             <div class="our_project__cards__card__info flex">
                                 <div class="our_project__cards__card__info__text">
-                                    <h3>Modern Kitchen</h3>
-                                    <h4>Decor / Artchitecture</h4>
+                                    <p class="bold">Modern Kitchen</p>
+                                    <p>Decor / Artchitecture</p>
                                 </div>
                                 <div class="our_project__cards__card__info__btn">
-                                    <a href="#">
-                                        <button class="btn">
-                                            <img src="./images/icons/arrow.png" alt="Vector 1">
-                                        </button>
+                                    <a href="#" class="btn">
+                                        <img src="./images/icons/arrow.WEBP" alt="Vector 1" width="70" height="70">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="our_project__cards__card">
                             <img class="our_project__image border-1 img-fluid"
-                                src="images/pictures/62720e89ecfd8df8468499d05aa1c5fa.png" alt="Artchitecture"
+                                src="images/pictures/62720e89ecfd8df8468499d05aa1c5fa.WEBP" alt="Artchitecture"
                                 width="548" height="525">
                             <div class="our_project__cards__card__info flex">
                                 <div class="our_project__cards__card__info__text">
-                                    <h3>Modern Kitchen</h3>
-                                    <h4>Decor / Artchitecture</h4>
+                                    <p class="bold">Modern Kitchen</p>
+                                    <p>Decor / Artchitecture</p>
                                 </div>
                                 <div class="our_project__cards__card__info__btn">
-                                    <a href="#">
-                                        <button class="btn">
-                                            <img src="./images/icons/arrow.png" alt="Vector 1">
-                                        </button>
+                                    <a href="#" class="btn">
+                                        <img src="./images/icons/arrow.WEBP" alt="Vector 1" width="70" height="70">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="our_project__cards__card">
                             <img class="our_project__image border-3 img-fluid"
-                                src="images/pictures/5fe830d7429c719eb51f9e617f6f4218.png" alt="Decor" width="548"
+                                src="images/pictures/5fe830d7429c719eb51f9e617f6f4218.WEBP" alt="Decor" width="548"
                                 height="525">
                             <div class="our_project__cards__card__info flex">
                                 <div class="our_project__cards__card__info__text">
-                                    <h3>Modern Kitchen</h3>
-                                    <h4>Decor / Artchitecture</h4>
+                                    <p class="bold">Modern Kitchen</p>
+                                    <p>Decor / Artchitecture</p>
                                 </div>
                                 <div class="our_project__cards__card__info__btn">
-                                    <a href="#">
-                                        <button class="btn">
-                                            <img src="./images/icons/arrow.png" alt="Vector 1">
-                                        </button>
+                                    <a href="#" class="btn">
+                                        <img src="./images/icons/arrow.WEBP" alt="Vector 1" width="70" height="70">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="our_project__cards__card">
                             <img class="our_project__image border-4 img-fluid"
-                                src="images/pictures/3b89cdc5858e9484c2f603e8b92add26.png" alt="Artchitecture"
+                                src="images/pictures/3b89cdc5858e9484c2f603e8b92add26.WEBP" alt="Artchitecture"
                                 width="548" height="525">
                             <div class="our_project__cards__card__info flex">
                                 <div class="our_project__cards__card__info__text">
-                                    <h3>Modern Kitchen</h3>
-                                    <h4>Decor / Artchitecture</h4>
+                                    <p class="bold">Modern Kitchen</p>
+                                    <p>Decor / Artchitecture</p>
                                 </div>
                                 <div class="our_project__cards__card__info__btn">
-                                    <a href="#">
-                                        <button class="btn">
-                                            <img src="./images/icons/arrow.png" alt="Vector 1">
-                                        </button>
+                                    <a href="#" class="btn">
+                                        <img src="./images/icons/arrow.WEBP" alt="Vector 1" width="70" height="70">
                                     </a>
                                 </div>
                             </div>
@@ -321,28 +309,20 @@
         <section class="count">
             <div class="container count__counter">
                 <div class="count__counter__text">
-                    <div>
-                        <h2>12</h2>
-                        <h3>Years Of Experiance</h3>
-                    </div>
+                    <h2>12</h2>
+                    <h3>Years Of Experiance</h3>
                 </div>
                 <div class="count__counter__text">
-                    <div>
-                        <h2>85</h2>
-                        <h3>Success Project</h3>
-                    </div>
+                    <h2>85</h2>
+                    <h3>Success Project</h3>
                 </div>
                 <div class="count__counter__text">
-                    <div>
-                        <h2>15</h2>
-                        <h3>Active Project</h3>
-                    </div>
+                    <h2>15</h2>
+                    <h3>Active Project</h3>
                 </div>
                 <div class="count__counter__text">
-                    <div>
-                        <h2>95</h2>
-                        <h3>Happy CUstomers</h3>
-                    </div>
+                    <h2>95</h2>
+                    <h3>Happy CUstomers</h3>
                 </div>
             </div>
         </section>
@@ -356,54 +336,49 @@
                         when lookings at its layouts the points of using.</p>
                     <div class="flex article_and_news__cards">
                         <div class="article_and_news__cards__card">
-                            <img class="article_and_news_img" src="images/pictures/4c4f8f5e4759944aaba98a3c6dd3e663.png"
+                            <img class="article_and_news_img" src="images/pictures/4c4f8f5e4759944aaba98a3c6dd3e663.WEBP"
                                 alt="article and news 1" width="340" height="289.267">
-                            <h1>Let’s Get Solution For Building Construction Work</h1>
+                            <p class="bold">Let’s Get Solution For Building Construction Work</p>
                             <div class="flex article_and_news__cards__card__info">
                                 <div class="article_and_news__cards__card__info__date">
                                     <p>26 December,2022 </p>
                                 </div>
                                 <div class="article_and_news__cards__card__info_btn">
-                                    <a href="#">
-                                        <button class="btn">
-                                            <img src="./images/icons/arrow.png" alt="Vector 1">
-                                        </button>
+                                    <a href="#" class="btn">
+                                        <img src="./images/icons/arrow.WEBP" alt="Vector 1" width="52" height="52">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="article_and_news__cards__card">
-                            <img class="article_and_news_img" src="images/pictures/a20e02c510f4296121a71c3794cedbdf.png"
+                            <img class="article_and_news_img" src="images/pictures/a20e02c510f4296121a71c3794cedbdf.WEBP"
                                 alt="article and news 2" width="340" height="289.267">
-                            <h1>Low Cost Latest Invented Interior Designing
-                                Ideas.</h1>
+                            <p class="bold">Low Cost Latest Invented Interior Designing
+                                Ideas.</p>
                             <div class="flex article_and_news__cards__card__info">
                                 <div class="article_and_news__cards__card__info__date">
                                     <p>26 December,2022 </p>
                                 </div>
                                 <div class="article_and_news__cards__card__info_btn">
-                                    <a href="#">
-                                        <button class="btn">
-                                            <img src="./images/icons/arrow.png" alt="Vector 1">
-                                        </button>
+                                    <a href="#" class="btn">
+                                        <img src="./images/icons/arrow.WEBP" alt="Vector 1" width="52" height="52">
                                     </a>
                                 </div>
                             </div>
                         </div>
                         <div class="article_and_news__cards__card">
-                            <img class="article_and_news_img img-fluid" src="images/pictures/5668f8225c864831b442aa6df4248e05.png"
-                                alt="article and news 3" width="340" height="289.267">
-                            <h1>Best For Any Office & Business Interior
-                                Solution</h1>
+                            <img class="article_and_news_img img-fluid"
+                                src="images/pictures/5668f8225c864831b442aa6df4248e05.WEBP" alt="article and news 3"
+                                width="340" height="289.267">
+                            <p class="bold">Best For Any Office & Business Interior
+                                Solution</p>
                             <div class="flex article_and_news__cards__card__info">
                                 <div class="article_and_news__cards__card__info__date">
                                     <p>26 December,2022 </p>
                                 </div>
                                 <div class="article_and_news__cards__card__info_btn">
-                                    <a href="#">
-                                        <button class="btn">
-                                            <img src="./images/icons/arrow.png" alt="Vector 1">
-                                        </button>
+                                    <a href="#" class="btn">
+                                        <img src="./images/icons/arrow.WEBP" alt="Vector 1" width="52" height="52">
                                     </a>
                                 </div>
                             </div>
@@ -417,12 +392,10 @@
                 <div class="contact">
                     <h2>Wanna join the interno?</h2>
                     <h3>It is a long established fact will be distracted.</h3>
-                    <button class="primary-btn">
-                        <a href="#">
-                            <p>contact with us</p>
-                            <img src="images/icons/Vector.png" alt="Vector">
-                        </a>
-                    </button>
+                    <a href="#" class="primary-btn">
+                        <p>contact with us</p>
+                        <img src="images/icons/Vector.WEBP" alt="Vector" width="15" height="13">
+                    </a>
                 </div>
             </div>
         </section>
@@ -433,17 +406,24 @@
             <div class="footer_content flex">
                 <div class="footer_content__icon">
                     <div class="footer_content__icon__logo">
-                        <a class="flex" href="#">
-                            <img src="images/icons/Logo.svg" alt="company logo">
-                            <h1>Interno</h1><!-- Logo image -->
+                        <a href="#">
+                            <img src="images/icons/Logo.svg" alt="company logo" width="177" height="50">
                         </a>
                     </div>
                     <p>It is a long established fact that a reader will be distracted lookings.</p>
                     <div class="footer_content__icon__social flex">
-                        <img src="./images/icons/.png" alt="facebook">
-                        <img src="./images/icons/.png" alt="twitter">
-                        <img src="./images/icons/.png" alt="linkedin">
-                        <img src="./images/icons/.png" alt="instagram">
+                        <a href="https://www.facebook.com/">
+                        <img src="./images/icons/facebook.WEBP" alt="facebook">
+                        </a>
+                        <a href="https://twitter.com/">
+                        <img src="./images/icons/twitter.WEBP" alt="twitter">
+                        </a>
+                        <a href="https://in.linkedin.com/">
+                            <img src="./images/icons/linkdin.WEBP" alt="linkedin">
+                        </a>
+                        <a href="https://www.instagram.com/">
+                            <img src="./images/icons/insta.WEBP" alt="instagram">
+                        </a>
 
                     </div>
                 </div>
@@ -476,7 +456,6 @@
             </div>
         </div>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="./jquery/slick.min.js"></script>
     <script src="./jquery/slider.js"></script>
 </body>

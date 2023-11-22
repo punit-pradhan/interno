@@ -1,14 +1,17 @@
 @font-face {
   font-family: Jost-Regular;
   src: url(../fonts/Jost-Regular.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: DM-Italic;
   src: url(../fonts/DMSerifDisplay-Italic.ttf);
+  font-display: swap;
 }
 @font-face {
   font-family: DM-Regular;
   src: url(../fonts/DMSerifDisplay-Regular.ttf);
+  font-display: swap;
 }
 .container {
   max-width: 1200px;
@@ -48,19 +51,18 @@
   border: none;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
   padding: 26px 54px;
-  background-color: #292F36;
-  background: #292F36;
-}
-.default-btn a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: #292F36;
+  background: #292F36;
+  width: 225px;
 }
-.default-btn a p {
-  font-size: 18px;
-  color: #FFF;
-  font-weight: 600;
+.default-btn p {
+  font-size: 18px !important;
+  color: #FFF !important;
+  font-weight: 600 !important;
   margin: 0 !important;
 }
 
@@ -69,19 +71,18 @@
   border: none;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
   padding: 26px 54px;
-  background-color: #292F36;
-  background: #292F36;
-}
-.large-btn a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: #292F36;
+  background: #292F36;
+  width: 290px;
 }
-.large-btn a p {
-  font-size: 18px;
-  color: #FFF;
-  font-weight: 600;
+.large-btn p {
+  font-size: 18px !important;
+  color: #FFF !important;
+  font-weight: 600 !important;
   margin: 0 !important;
 }
 
@@ -90,19 +91,19 @@
   border: none;
   box-shadow: 0px 10px 20px 0px rgba(192, 192, 192, 0.35);
   padding: 26px 54px;
-  background-color: #292F36;
-  background: #CDA274;
-}
-.primary-btn a {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  background-color: #292F36;
+  background: #CDA274;
+  width: 260px;
+  margin: 0 auto;
 }
-.primary-btn a p {
-  font-size: 18px;
-  color: #FFF;
-  font-weight: 600;
+.primary-btn p {
+  font-size: 18px !important;
+  color: #FFF !important;
+  font-weight: 600 !important;
   margin: 0 !important;
 }
 
@@ -110,6 +111,14 @@
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.bold {
+  color: #4D5053;
+  font-family: Jost-Regular;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 1.25;
 }
 
 * {
@@ -150,21 +159,6 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.navbar__logo a img {
-  margin-right: 10px;
-}
-@media screen and (max-width: 576px) {
-  .navbar__logo a img {
-    width: 70%;
-    height: auto;
-  }
-}
-.navbar__logo a h1 {
-  color: #292F36;
-  font-family: DM-Regular;
-  font-size: 40px;
-  font-weight: 400;
 }
 .navbar__menu {
   display: flex;
@@ -274,11 +268,12 @@ ul {
     top: 10%;
   }
 }
-.banner__content h2 {
+.banner__content h1 {
   color: #292F36;
   font-family: DM-Regular;
   font-size: 84px;
   font-weight: 400;
+  line-height: 1.25;
   line-height: 95px;
   margin-bottom: 10px;
 }
@@ -287,6 +282,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   margin-bottom: 21px;
 }
 @media screen and (max-width: 768px) {
@@ -326,6 +322,7 @@ ul {
   font-family: DM-Regular;
   font-size: 25px;
   font-weight: 500;
+  line-height: 1.25;
   text-align: center;
   margin-bottom: 20px;
 }
@@ -334,6 +331,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   text-align: center;
   margin-bottom: 52px;
 }
@@ -343,13 +341,12 @@ ul {
   align-items: center;
   justify-content: center;
 }
-.card__div a h4 {
-  color: #4D5053;
-  font-family: Jost-Regular;
-  font-size: 22px;
-  font-weight: 400;
-  text-align: center;
+.card__div a .bold {
   font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0;
+  line-height: 1.25;
+  text-align: center;
 }
 
 .contact_us {
@@ -383,6 +380,7 @@ ul {
   font-family: DM-Regular;
   font-size: 50px;
   font-weight: 400;
+  line-height: 1.25;
   letter-spacing: 1px;
 }
 .contact_us__content p {
@@ -390,6 +388,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   margin-bottom: 45px;
   letter-spacing: 0.22px;
 }
@@ -398,17 +397,20 @@ ul {
   gap: 15px;
   margin-bottom: 47px;
 }
-.contact_us__content__call__number h4 {
+.contact_us__content__call__number .bold {
   color: #4D5053;
   font-family: Jost-Regular;
   font-size: 24px;
   font-weight: 700;
+  line-height: 1.5;
 }
-.contact_us__content__call__number h5 {
+.contact_us__content__call__number p {
   color: #4D5053;
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
+  margin: 0;
 }
 .contact_us__image {
   height: 700px;
@@ -449,6 +451,7 @@ ul {
   font-family: DM-Regular;
   font-size: 50px;
   font-weight: 400;
+  line-height: 1.25;
   text-align: center;
   width: 55%;
   margin: 0 auto 38px auto;
@@ -520,34 +523,33 @@ ul {
 .about_us__cards__card__top__text {
   font-size: 22px;
 }
-.about_us__cards__card__top__text h3 {
+.about_us__cards__card__top__text .bold {
   color: #292F36;
   font-family: DM-Regular;
   font-size: 25px;
   font-weight: 400;
+  line-height: 1.5;
 }
 .about_us__cards__card__top__text p {
   color: #4D5053;
   font-family: Jost-Regular;
   font-size: 18px;
   font-weight: 400;
+  line-height: 1.5;
 }
 .about_us__cards__card__bottom {
   color: #4D5053;
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
 }
 
 .brand {
   display: flex;
-  gap: 108px;
   margin: 150px 0;
-}
-@media screen and (max-width: 1200px) {
-  .brand {
-    gap: 0px;
-  }
+  justify-content: center;
+  flex-wrap: wrap;
 }
 @media screen and (max-width: 992px) {
   .brand {
@@ -556,7 +558,7 @@ ul {
   }
 }
 .brand__logo {
-  width: 25%;
+  width: 20%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -580,6 +582,7 @@ ul {
   font-family: DM-Regular;
   font-size: 50px;
   font-weight: 400;
+  line-height: 1.25;
   margin-bottom: 8px;
 }
 .our_project .para_info {
@@ -587,6 +590,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   width: 60%;
   margin: 0 auto;
   margin-bottom: 37px;
@@ -624,20 +628,21 @@ ul {
   align-items: center;
   padding-top: 24px;
 }
-.our_project__cards__card__info__text h3 {
+.our_project__cards__card__info__text .bold {
   color: #292F36;
   font-family: DM-Regular;
   font-size: 25px;
   font-weight: 400;
+  line-height: 1.25;
 }
-.our_project__cards__card__info__text h4 {
+.our_project__cards__card__info__text p {
   color: #4D5053;
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
 }
-.our_project__cards__card__info__btn a .btn {
-  border: none;
+.our_project__cards__card__info__btn .btn {
   border-radius: 50%;
 }
 
@@ -662,35 +667,16 @@ ul {
   margin: 150px 0;
 }
 .count__counter {
+  flex-wrap: wrap;
   display: flex;
-  padding: 151px 0rem;
+  align-items: center;
   justify-content: center;
-  align-items: flex-start;
-  gap: 76px;
-}
-@media screen and (max-width: 992px) {
-  .count__counter {
-    gap: 0px;
-    justify-content: space-between;
-  }
-}
-@media screen and (max-width: 576px) {
-  .count__counter {
-    flex-wrap: wrap;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    justify-content: space-around;
-  }
+  justify-content: space-around;
+  padding: 151px 0rem;
 }
 .count__counter__text {
-  display: flex;
-}
-@media screen and (max-width: 992px) {
-  .count__counter__text {
-    border-right: 1px solid #CDA274;
-    padding-right: 20px;
-  }
+  width: 25%;
+  position: relative;
 }
 @media screen and (max-width: 576px) {
   .count__counter__text {
@@ -699,22 +685,20 @@ ul {
   }
 }
 .count__counter__text::after {
+  position: absolute;
   content: "";
-  margin-left: 54px;
-  margin-top: 28px;
+  top: 30px;
+  bottom: 0;
+  right: 0;
   width: 1px;
   background-color: #CDA274;
-}
-@media screen and (max-width: 992px) {
-  .count__counter__text::after {
-    display: none;
-  }
 }
 .count__counter__text h2 {
   color: #CDA274;
   font-family: DM-Regular;
   font-size: 85px;
   font-weight: 400;
+  line-height: 1.25;
   text-align: center;
   margin-bottom: 16px;
 }
@@ -723,19 +707,8 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   text-align: center;
-}
-@media screen and (max-width: 992px) {
-  .count__counter__text:nth-child(4) {
-    border-right: 0px;
-    margin-right: 0px;
-    padding-right: 0px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .count__counter__text:nth-child(4) {
-    border-right: 1px solid #CDA274;
-  }
 }
 .count__counter__text:nth-child(4)::after {
   display: none;
@@ -746,6 +719,7 @@ ul {
   font-family: DM-Regular;
   font-size: 50px;
   font-weight: 400;
+  line-height: 1.25;
   text-align: center;
   margin-bottom: 12px;
 }
@@ -754,6 +728,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   width: 66%;
   margin: 0 auto;
   text-align: center;
@@ -799,13 +774,14 @@ ul {
     height: auto;
   }
 }
-.article_and_news__cards__card h1 {
+.article_and_news__cards__card .bold {
   margin-top: 21px;
   margin-bottom: 30px;
   color: #292F36;
   font-family: DM-Regular;
   font-size: 25px;
   font-weight: 400;
+  line-height: 1.25;
 }
 .article_and_news__cards__card__info {
   margin-bottom: 21px;
@@ -817,13 +793,14 @@ ul {
   font-family: Jost-Regular;
   font-size: 16px;
   font-weight: 400;
+  line-height: 1.5;
 }
 .article_and_news__cards__card__info_btn a .btn {
   border: none;
   border-radius: 50%;
 }
 .article_and_news__cards__card__info_btn a .btn img {
-  width: 50px;
+  width: 52px;
 }
 .article_and_news__cards__card:hover {
   background-color: #F4F0EC;
@@ -855,6 +832,7 @@ ul {
   font-family: DM-Regular;
   font-size: 50px;
   font-weight: 400;
+  line-height: 1.25;
 }
 .contact h3 {
   margin-top: 11px;
@@ -862,6 +840,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   margin-bottom: 32px;
 }
 
@@ -885,6 +864,7 @@ ul {
   font-family: DM-Regular;
   font-size: 25px;
   font-weight: 400;
+  line-height: 1.25;
   margin-bottom: 9px;
 }
 .footer_content ul li a {
@@ -892,6 +872,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 3;
   margin: 17px 0;
 }
 .footer_content__icon {
@@ -906,19 +887,15 @@ ul {
 }
 .footer_content__icon__logo a {
   display: flex;
-  gap: 10px;
-}
-.footer_content__icon__logo a h1 {
-  color: #292F36;
-  font-family: DM-Regular;
-  font-size: 40px;
-  font-weight: 400;
+  align-items: center;
+  justify-content: center;
 }
 .footer_content__icon p {
   color: #4D5053;
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   margin-top: 18px;
 }
 .footer_content__icon__social {
@@ -945,6 +922,7 @@ ul {
   font-family: Jost-Regular;
   font-size: 22px;
   font-weight: 400;
+  line-height: 1.5;
   word-wrap: break-word;
   margin: 17px 0;
 }
