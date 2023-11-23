@@ -6,6 +6,7 @@
     @include flex;
     justify-content: space-between;
     gap: 101px;
+    margin-bottom: 134px;
 
     @include media($large-screen) {
         gap: 0px;
@@ -13,6 +14,7 @@
 
     @include media($tablet-screen) {
         flex-wrap: wrap;
+        margin-bottom: 0;
     }
 
     h2 {
@@ -39,12 +41,6 @@
             padding: 0 20px;
         }
 
-        // &__logo {
-        //     a {
-        //         @include flex-center;
-        //     }
-        // }
-
         p {
             @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             margin-top: 18px;
@@ -53,6 +49,10 @@
         &__social {
             gap: 54px;
             margin-top: 31px;
+
+            img {
+                width: auto;
+            }
         }
     }
 
@@ -79,4 +79,9 @@
             margin: 17px 0;
         }
     }
+}
+.Copyright{
+    margin: 40px 0;
+    text-align: center;
+    @include text-styles($primary-color, $font-regular, 22px, 400, 1.5);
 }

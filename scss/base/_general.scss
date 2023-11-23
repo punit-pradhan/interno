@@ -83,7 +83,8 @@
     left: 0;
     right: 0;
     top: 0;
-    bottom: 0;
+    bottom: 58.5px;
+
     .line-1 {
         width: 1px;
         background-color: #E6E6E6;
@@ -124,4 +125,12 @@
         top: 0;
         bottom: 0;
     }
+}
+.line-5 {
+    right: 0;
+    height: 1px;
+    background-color: #E6E6E6;
+    width: 100%;
+    position: absolute;
+    bottom: 59px;
 }
