@@ -27,69 +27,196 @@
     }
 
     &__menu {
-        @include flex;
-        justify-content: center;
+        @include flex-center;
 
-        &__horizontal_list {
-            img {
-                display: none;
-                height: auto;
-                width: 20px;
-
-                @include media($mobile-screen) {
-                    display: block;
-                }
-            }
-
-            ul {
-                @include flex;
-                gap: 25px;
-
-                @include media($tablet-screen) {
-                    gap: 10px;
-                }
-
-                @include media($mobile-screen) {
-                    display: none;
-                }
-
-                li {
-                    cursor: pointer;
-
-                    a {
-                        font-family: $font-regular;
-                        color: $primary-color;
-                        display: block;
-                        font-size: 20px;
-                        transition: 0.5s;
-                    }
-                }
-            }
-
-            @include media($mobile-screen) {
-                .hidden-menu {
-                    position: absolute;
-                    z-index: 2;
-                    padding: 20px;
-                }
-            }
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            overflow: hidden;
+            background-color: $white-color;
         }
 
-        #search-btn {
-            margin: 0px 0 0 31px;
+        li a {
+            display: block;
+            padding: 20px 20px;
+            @include text-styles($secondary-color, $font-regular, 20px, 400, 1.25);
+            border-right: 1px solid #f4f4f4;
+            text-decoration: none;
+        }
 
-            @include media($tablet-screen) {
-                margin: 0px 0 0 10px;
-            }
-
-            @include media($mobile-screen) {
-                margin: 0px 0 0 35px;
-            }
+        li a:hover,
+        .menu-btn:hover {
+            background-color: #f4f4f4;
         }
     }
-}
 
-// Show the element with the "show" class
-.show {
-    display: block !important;
+    /* menu */
+
+    .menu {
+        clear: both;
+        max-height: 0;
+    }
+
+    /* menu icon */
+
+    .menu-icon {
+        cursor: pointer;
+        display: inline-block;
+        float: right;
+        padding: 28px 20px;
+        position: relative;
+        user-select: none;
+    }
+
+    .menu-icon .navicon {
+        background: $Primary-1;
+        display: block;
+        height: 2px;
+        position: relative;
+        transition: background .2s ease-out;
+        width: 18px;
+    }
+
+    .menu-icon .navicon:before,
+    .menu-icon .navicon:after {
+        background: $Primary-1;
+        content: '';
+        display: block;
+        height: 100%;
+        position: absolute;
+        transition: all .2s ease-out;
+        width: 100%;
+    }
+
+    .menu-icon .navicon:before {
+        top: 5px;
+    }
+
+    .menu-icon .navicon:after {
+        top: -5px;
+    }
+
+    /* menu btn */
+
+    .menu-btn {
+        display: none;
+    }
+
+    .menu-btn:checked~.menu {
+        max-height: 450px;
+        left: 0;
+        text-align: center;
+        right: 0;
+        position: absolute;
+        top: 70px;
+        z-index: 3;
+    }
+
+    .menu-btn:checked~.menu-icon .navicon {
+        background: transparent;
+    }
+
+    .menu-btn:checked~.menu-icon .navicon:before {
+        transform: rotate(-45deg);
+    }
+
+    .menu-btn:checked~.menu-icon .navicon:after {
+        transform: rotate(45deg);
+    }
+
+    .menu-btn:checked~.menu-icon:not(.steps) .navicon:before,
+    .menu-btn:checked~.menu-icon:not(.steps) .navicon:after {
+        top: 0;
+    }
+
+    /* 48em = 768px */
+
+    @media (min-width: 48em) {
+        li {
+            float: left;
+        }
+
+        li a {
+            padding: 20px 10px;
+            font-size: 18px;
+        }
+
+        .menu {
+            clear: none;
+            float: right;
+            max-height: none;
+        }
+
+        .menu-icon {
+            display: none;
+        }
+    }
+
+    // @include flex;
+    // justify-content: center;
+
+    // &__horizontal_list {
+    //     img {
+    //         display: none;
+    //         height: auto;
+    //         width: 20px;
+
+    //         @include media($mobile-screen) {
+    //             display: block;
+    //         }
+    //     }
+
+    //     ul {
+    //         @include flex;
+    //         gap: 25px;
+
+    //         @include media($tablet-screen) {
+    //             gap: 10px;
+    //         }
+
+    //         @include media($mobile-screen) {
+    //             display: none;
+    //         }
+
+    //         li {
+    //             cursor: pointer;
+
+    //             a {
+    //                 font-family: $font-regular;
+    //                 color: $primary-color;
+    //                 display: block;
+    //                 font-size: 20px;
+    //                 transition: 0.5s;
+    //             }
+    //         }
+    //     }
+
+    //     @include media($mobile-screen) {
+    //         .hidden-menu {
+    //             position: absolute;
+    //             background-color: white;
+    //             line-height: 3;
+    //             right: 0;
+    //             top: 60px;
+    //             text-align: center;
+    //             left: 0;
+    //             z-index: 2;
+    //             padding: 20px;
+    //         }
+    //     }
+    // }
+
+    #search-btn {
+        margin: 0px 0 0 31px;
+
+        @include media($tablet-screen) {
+            margin: 0px 0 0 10px;
+        }
+
+        @include media($mobile-screen) {
+            margin: 0px 0 0 35px;
+        }
+    }
+
 }

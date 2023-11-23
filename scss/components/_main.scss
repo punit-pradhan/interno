@@ -6,6 +6,10 @@
     height: 900px;
     position: relative;
 
+    @include media($mobile-screen) {
+        height: 600px;
+    }
+
     &__image {
         height: inherit;
 
@@ -36,18 +40,20 @@
         }
 
         @include media($tablet-screen) {
-            padding-left: 20px;
-            max-width: 80%;
-        }
-
-        @include media($mobile-screen) {
-            top: 10%;
+            max-width: 100%;
         }
 
         h1 {
             @include text-styles($primary-color, $font-medium, 84px, 400, 1.25);
-            line-height: 95px;
             margin-bottom: 10px;
+
+            @include media($tablet-screen) {
+                font-size: 60px;
+            }
+
+            @include media($mobile-screen) {
+                font-size: 42px;
+            }
         }
 
         p {
@@ -69,6 +75,7 @@
     @include media($tablet-screen) {
         flex-wrap: wrap;
         @include flex-center;
+        margin: 0;
     }
 
     &__div {
@@ -76,11 +83,7 @@
 
         @include media($tablet-screen) {
             width: 50%;
-            margin-bottom: 20px
-        }
-
-        @include media($mobile-screen) {
-            width: 100%;
+            margin-bottom: 20px;
         }
 
         h3 {
@@ -109,6 +112,24 @@
                 text-align: center;
             }
         }
+
+        @include media($mobile-screen) {
+            width: 100%;
+
+            h3 {
+                font-size: 22px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            a {
+                .bold {
+                    font-size: 16px;
+                }
+            }
+        }
     }
 }
 
@@ -119,6 +140,7 @@
 
     @include media($tablet-screen) {
         flex-direction: column-reverse;
+        margin-bottom: 100px;
     }
 
     &__content {
@@ -161,6 +183,31 @@
                     margin: 0;
                 }
             }
+
+            &__icon {
+                @include media($mobile-screen) {
+                    img {
+                        width: 50px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+
+        @include media($mobile-screen) {
+            width: 100%;
+
+            h3 {
+                font-size: 35px;
+            }
+
+            p {
+                font-size: 18px;
+            }
+
+            .bold {
+                font-size: 20px;
+            }
         }
     }
 
@@ -197,11 +244,19 @@
     padding: 88px 25px;
     border-radius: 50px;
 
+    @include media($tablet-screen) {
+        padding: 50px 18px;
+    }
+
     h2 {
         @include text-styles($primary-color, $font-medium, 50px, 400, 1.25);
         text-align: center;
         width: 55%;
         margin: 0 auto 38px auto;
+
+        @include media($tablet-screen) {
+            font-size: 35px;
+        }
 
         @include media($mobile-screen) {
             width: 80%;
@@ -278,6 +333,10 @@
 
                     .bold {
                         @include text-styles($primary-color, $font-medium, 25px, 400, 1.5);
+
+                        @include media($tablet-screen) {
+                            font-size: 22px;
+                        }
                     }
 
                     p {
@@ -288,6 +347,10 @@
 
             &__bottom {
                 @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
+
+                @include media($tablet-screen) {
+                    font-size: 20px;
+                }
             }
         }
     }
@@ -299,12 +362,13 @@
     justify-content: center;
     flex-wrap: wrap;
 
-    // @include media($extra-large-screen) {
-    // }
-
     @include media($large-screen) {
         justify-content: center;
         flex-wrap: wrap;
+    }
+
+    @include media($tablet-screen) {
+        margin: 100px 0;
     }
 
     &__logo {
@@ -328,6 +392,10 @@
         text-align: center;
         @include text-styles($Primary-2, $font-medium, 50px, 400, 1.25);
         margin-bottom: 8px;
+
+        @include media($tablet-screen) {
+            font-size: 35px;
+        }
     }
 
     .para_info {
@@ -336,6 +404,11 @@
         margin: 0 auto;
         margin-bottom: 37px;
         text-align: center;
+
+        @include media($tablet-screen) {
+            font-size: 18px;
+            width: 100%;
+        }
     }
 
     &__cards {
@@ -348,7 +421,7 @@
             margin-top: 56px;
 
             @include media($mobile-screen) {
-                width: 80%;
+                width: 100%;
                 margin: 0 auto;
                 margin-bottom: 40px;
             }
@@ -377,11 +450,27 @@
                     p {
                         @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
                     }
+
+                    @include media($tablet-screen) {
+                        .p {
+                            font-size: 18px;
+                        }
+
+                        .bold {
+                            font-size: 22px;
+                        }
+                    }
                 }
 
                 &__btn {
                     .btn {
+                        img{
                         border-radius: 50%;
+                        @include media($tablet-screen) {
+                        width: 50px;
+                        height: 50px;
+                        }
+                        }
                     }
                 }
             }
@@ -409,11 +498,18 @@
     background-color: $Primary-3;
     margin: 150px 0;
 
+    @include media($tablet-screen) {
+        margin: 100px 0;
+    }
+
     &__counter {
         flex-wrap: wrap;
         @include flex-center;
-        justify-content: space-around;
         padding: 151px 0rem;
+
+        @include media($tablet-screen) {
+            padding: 100px 0;
+        }
 
         &__text {
             width: 25%;
@@ -437,10 +533,6 @@
                 right: 0;
                 width: 1px;
                 background-color: $Primary-1;
-
-                // @include media($large-screen) {
-                //     display: none;
-                // }
             }
 
             h2 {
@@ -452,6 +544,21 @@
             h3 {
                 @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
                 text-align: center;
+            }
+            @include media($tablet-screen) {
+                h2{
+                    font-size: 50px;
+                }
+                h3{
+                font-size: 18px;
+                }
+            }
+            &:nth-child(2) {
+                &::after {
+                    @include media($tablet-screen) {
+                        display: none;
+                    }
+                }
             }
 
             &:nth-child(4) {
@@ -468,6 +575,10 @@
         @include text-styles($primary-color, $font-medium, 50px, 400, 1.25);
         text-align: center;
         margin-bottom: 12px;
+
+        @include media($tablet-screen) {
+            font-size: 35px;
+        }
     }
 
     .article_and_news_info {
@@ -480,6 +591,7 @@
 
         @include media($tablet-screen) {
             width: 90%;
+            font-size: 18px;
         }
     }
 
@@ -519,6 +631,10 @@
                 margin-top: 21px;
                 margin-bottom: 30px;
                 @include text-styles($primary-color, $font-medium, 25px, 400, 1.25);
+
+                @include media($tablet-screen) {
+                    font-size: 22px;
+                }
             }
 
             &__info {
@@ -533,13 +649,16 @@
                 }
 
                 &_btn {
-                    a {
-                        .btn {
-                            border: none;
-                            border-radius: 50%;
+                    .btn {
+                        border: none;
+                        border-radius: 50%;
 
-                            img {
-                                width: 52px;
+                        img {
+                            width: 52px;
+
+                            @include media($tablet-screen) {
+                                width: 40px;
+                                height: 40px;
                             }
                         }
                     }
@@ -567,7 +686,9 @@
     @include media($large-screen) {
         padding: 80px 150px;
     }
-
+    @include media($tablet-screen) {
+    margin: 100px 0;
+    }
     @include media($mobile-screen) {
         padding: 50px 40px;
         border-radius: 0px;
@@ -575,11 +696,17 @@
 
     h2 {
         @include text-styles($white-color, $font-medium, 50px, 400, 1.25);
+        @include media($tablet-screen) {
+        font-size: 35px;
+        }
     }
 
     h3 {
         margin-top: 11px;
         @include text-styles($white-color, $font-regular, 22px, 400, 1.5);
         margin-bottom: 32px;
+        @include media($tablet-screen) {
+            font-size: 18px;
+            }
     }
 }

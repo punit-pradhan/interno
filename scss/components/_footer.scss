@@ -39,11 +39,11 @@
             padding: 0 20px;
         }
         
-        &__logo {
-            a {
-                @include flex-center;
-            }
-        }
+        // &__logo {
+        //     a {
+        //         @include flex-center;
+        //     }
+        // }
 
         p {
             @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);

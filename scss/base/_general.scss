@@ -8,6 +8,7 @@
 
     @include media($extra-large-screen) {
         max-width: 1140px; 
+        padding: 0 20px;
     }
 
     @include media($large-screen) {
@@ -36,6 +37,7 @@
     @include button;
     background: #292F36;
     width: 225px;
+   
 }
 
 .large-btn {
@@ -46,11 +48,20 @@
 
 .primary-btn {
     @include button;
-    background: #CDA274;
-    width: 260px;
+    box-shadow: 0px 10px 20px 0px rgba(0,0,0);
+    background: $Primary-1;
+    width: 265px;
     margin: 0 auto;
 }
+.large-btn,.primary-btn,.default-btn{
+    @include media($extra-large-screen) {
+    width: fit-content;
+    }
 
+    @include media($mobile-screen){
+        padding: 14px 20px;
+    }
+}
 .img-fluid {
     display: block;
     max-width: 100%;
