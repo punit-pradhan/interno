@@ -8,11 +8,18 @@
     <link rel="stylesheet" href="./css/main.css"> <!-- Link to your main CSS file -->
     <link rel="stylesheet" href="./css/slick.css">
     <link rel="stylesheet" href="./css/slick-theme.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <title>Interno</title>
 </head>
 
 <body>
+    <div class="container lines">
+        <div class="line-1"></div>
+        <div class="line-2"></div>
+        <div class="line-3"></div>
+        <div class="line-4"></div>
+    </div>
     <!-- Header section with background color -->
     <header class="margin-20">
         <!-- Navigation menu -->
@@ -24,8 +31,8 @@
             </div>
             <div class="navbar__menu">
                 <div class="navbar__menu__horizontal_list">
-                    <input class="menu-btn" type="checkbox" id="menu-btn" />
                     <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label> <!-- Menu icon -->
+                    <input class="menu-btn" type="checkbox" id="menu-btn" />
                     <ul class="menu">
                         <li><a href="#">Home</a></li>
                         <li>
@@ -75,7 +82,7 @@
         <section class="card_section">
             <div class="container">
                 <div class="card flex">
-                    <div class="card__div">
+                    <div data-aos="fade-right" class="card__div">
                         <h3>Project Plan</h3>
                         <p>There are many variations of the passages of lorem Ipsum from
                             available, majority.</p>
@@ -84,7 +91,7 @@
                             <img src="images/icons/Vector.svg" alt="Vector" width="15" height="13">
                         </a>
                     </div>
-                    <div class="card__div">
+                    <div data-aos="fade-down" class="card__div">
                         <h3>Interior Work</h3>
                         <p>There are many variations of the passages of lorem Ipsum from
                             available, majority.</p>
@@ -93,7 +100,7 @@
                             <img src="images/icons/Vector.svg" alt="Vector" width="15" height="13">
                         </a>
                     </div>
-                    <div class="card__div">
+                    <div data-aos="fade-left" class="card__div">
                         <h3>Realization</h3>
                         <p>There are many variations of the passages of lorem Ipsum from
                             available, majority.</p>
@@ -239,7 +246,7 @@
                         content of page
                         lookings at its layouts points.</p>
                     <div class="our_project__cards">
-                        <div class="our_project__cards__card">
+                        <div data-aos="flip-right" class="our_project__cards__card">
                             <img class="our_project__image border-2 img-fluid"
                                 src="images/pictures/b997269d1ab52432ef83b1843d337b86.WEBP" alt="Modern Kitchen"
                                 width="548" height="525">
@@ -255,7 +262,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="our_project__cards__card">
+                        <div data-aos="flip-left" class="our_project__cards__card">
                             <img class="our_project__image border-1 img-fluid"
                                 src="images/pictures/62720e89ecfd8df8468499d05aa1c5fa.WEBP" alt="Artchitecture"
                                 width="548" height="525">
@@ -271,7 +278,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="our_project__cards__card">
+                        <div data-aos="flip-right" class="our_project__cards__card">
                             <img class="our_project__image border-3 img-fluid"
                                 src="images/pictures/5fe830d7429c719eb51f9e617f6f4218.WEBP" alt="Decor" width="548"
                                 height="525">
@@ -287,7 +294,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="our_project__cards__card">
+                        <div data-aos="flip-left" class="our_project__cards__card">
                             <img class="our_project__image border-4 img-fluid"
                                 src="images/pictures/3b89cdc5858e9484c2f603e8b92add26.WEBP" alt="Artchitecture"
                                 width="548" height="525">
@@ -336,10 +343,13 @@
                         of readable content of a page
                         when lookings at its layouts the points of using.</p>
                     <div class="flex article_and_news__cards">
-                        <div class="article_and_news__cards__card">
-                            <img class="article_and_news_img"
-                                src="images/pictures/4c4f8f5e4759944aaba98a3c6dd3e663.WEBP" alt="article and news 1"
-                                width="340" height="289.267">
+                        <div data-aos="flip-left" class="article_and_news__cards__card">
+                            <div class="img">
+                                <img class="article_and_news_img"
+                                    src="images/pictures/4c4f8f5e4759944aaba98a3c6dd3e663.WEBP" alt="article and news 1"
+                                    width="340" height="289.267">
+                                <p class="news_info">Kitchan Design</p>
+                            </div>
                             <p class="bold">Let’s Get Solution For Building Construction Work</p>
                             <div class="flex article_and_news__cards__card__info">
                                 <div class="article_and_news__cards__card__info__date">
@@ -352,10 +362,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article_and_news__cards__card">
-                            <img class="article_and_news_img"
-                                src="images/pictures/a20e02c510f4296121a71c3794cedbdf.WEBP" alt="article and news 2"
-                                width="340" height="289.267">
+                        <div data-aos="flip-left" class="article_and_news__cards__card">
+                            <div class="img">
+                                <img class="article_and_news_img"
+                                    src="images/pictures/a20e02c510f4296121a71c3794cedbdf.WEBP" alt="article and news 2"
+                                    width="340" height="289.267">
+                                <p class="news_info">Living Design</p>
+                            </div>
                             <p class="bold">Low Cost Latest Invented Interior Designing
                                 Ideas.</p>
                             <div class="flex article_and_news__cards__card__info">
@@ -369,10 +382,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="article_and_news__cards__card">
-                            <img class="article_and_news_img img-fluid"
-                                src="images/pictures/5668f8225c864831b442aa6df4248e05.WEBP" alt="article and news 3"
-                                width="340" height="289.267">
+                        <div data-aos="flip-left" class="article_and_news__cards__card">
+                            <div class="img">
+                                <img class="article_and_news_img img-fluid"
+                                    src="images/pictures/5668f8225c864831b442aa6df4248e05.WEBP" alt="article and news 3"
+                                    width="340" height="289.267">
+                                <p class="news_info">Interior Design</p>
+                            </div>
                             <p class="bold">Best For Any Office & Business Interior
                                 Solution</p>
                             <div class="flex article_and_news__cards__card__info">
@@ -457,10 +473,15 @@
                     <h3>(123) 456 - 7890</h3>
                 </div>
             </div>
+            <div></div>
         </div>
     </footer>
     <script src="./jquery/slick.min.js"></script>
     <script src="./jquery/slider.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>

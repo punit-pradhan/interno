@@ -13,6 +13,9 @@ html {
     scroll-behavior: smooth;
 }
 
+body{
+    position: relative;
+}
 // Style anchor (link) elements to be block-level and remove text decoration
 a {
     display: block;

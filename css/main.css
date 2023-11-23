@@ -44,7 +44,7 @@
 }
 
 .margin-20 {
-  margin: 20px 0;
+  padding: 20px 0;
 }
 
 .default-btn {
@@ -110,12 +110,16 @@
 }
 
 @media screen and (max-width: 1200px) {
-  .large-btn, .primary-btn, .default-btn {
+  .large-btn,
+  .primary-btn,
+  .default-btn {
     width: fit-content;
   }
 }
 @media screen and (max-width: 576px) {
-  .large-btn, .primary-btn, .default-btn {
+  .large-btn,
+  .primary-btn,
+  .default-btn {
     padding: 14px 20px;
   }
 }
@@ -134,6 +138,51 @@
   line-height: 1.25;
 }
 
+.lines {
+  z-index: -1;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.lines .line-1 {
+  width: 1px;
+  background-color: #E6E6E6;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+}
+.lines .line-2 {
+  width: 1px;
+  background-color: #E6E6E6;
+  height: 100%;
+  left: 33.33%;
+  top: 0;
+  bottom: 0;
+  position: absolute;
+}
+.lines .line-3 {
+  width: 1px;
+  background-color: #E6E6E6;
+  height: 100%;
+  right: 33.33%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+.lines .line-4 {
+  right: 0;
+  width: 1px;
+  background-color: #E6E6E6;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -142,6 +191,10 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
 }
 
 a {
@@ -953,16 +1006,32 @@ ul {
     margin: 20px auto;
   }
 }
-.article_and_news__cards__card .article_and_news_img {
+.article_and_news__cards__card .img {
+  position: relative;
+}
+.article_and_news__cards__card .img .article_and_news_img {
   width: 100%;
   object-fit: cover;
   height: 290px;
   border-radius: 35px 35px 0 0;
 }
 @media screen and (max-width: 768px) {
-  .article_and_news__cards__card .article_and_news_img {
+  .article_and_news__cards__card .img .article_and_news_img {
     height: auto;
   }
+}
+.article_and_news__cards__card .img .news_info {
+  color: #4D5053;
+  font-family: Jost-Regular;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  background-color: #FFF;
+  position: absolute;
+  bottom: 25px;
+  border-radius: 8px 8px 8px 0px;
+  padding: 8px;
+  left: 25px;
 }
 .article_and_news__cards__card .bold {
   margin-top: 21px;

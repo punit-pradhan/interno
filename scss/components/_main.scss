@@ -464,12 +464,13 @@
 
                 &__btn {
                     .btn {
-                        img{
-                        border-radius: 50%;
-                        @include media($tablet-screen) {
-                        width: 50px;
-                        height: 50px;
-                        }
+                        img {
+                            border-radius: 50%;
+
+                            @include media($tablet-screen) {
+                                width: 50px;
+                                height: 50px;
+                            }
                         }
                     }
                 }
@@ -545,14 +546,17 @@
                 @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
                 text-align: center;
             }
+
             @include media($tablet-screen) {
-                h2{
+                h2 {
                     font-size: 50px;
                 }
-                h3{
-                font-size: 18px;
+
+                h3 {
+                    font-size: 18px;
                 }
             }
+
             &:nth-child(2) {
                 &::after {
                     @include media($tablet-screen) {
@@ -616,14 +620,31 @@
                 margin: 20px auto;
             }
 
-            .article_and_news_img {
-                width: 100%;
-                object-fit: cover;
-                height: 290px;
-                border-radius: 35px 35px 0 0;
+            .img {
+                position: relative;
 
-                @include media($tablet-screen) {
-                    height: auto;
+                .article_and_news_img {
+                    width: 100%;
+                    object-fit: cover;
+                    height: 290px;
+                    border-radius: 35px 35px 0 0;
+
+                    @include media($tablet-screen) {
+                        height: auto;
+                    }
+                }
+
+                .news_info {
+                    @include text-styles($secondary-color, $font-regular, 16px, 400, 1.5);
+                    background-color: $white-color;
+                    position: absolute;
+                    bottom: 25px;
+                    border-radius: 8px 8px 8px 0px;
+                    padding: 8px;
+                    left: 25px;
+
+                    // @include media($large-screen) {
+                    // }
                 }
             }
 
@@ -686,9 +707,11 @@
     @include media($large-screen) {
         padding: 80px 150px;
     }
+
     @include media($tablet-screen) {
-    margin: 100px 0;
+        margin: 100px 0;
     }
+
     @include media($mobile-screen) {
         padding: 50px 40px;
         border-radius: 0px;
@@ -696,8 +719,9 @@
 
     h2 {
         @include text-styles($white-color, $font-medium, 50px, 400, 1.25);
+
         @include media($tablet-screen) {
-        font-size: 35px;
+            font-size: 35px;
         }
     }
 
@@ -705,8 +729,9 @@
         margin-top: 11px;
         @include text-styles($white-color, $font-regular, 22px, 400, 1.5);
         margin-bottom: 32px;
+
         @include media($tablet-screen) {
             font-size: 18px;
-            }
+        }
     }
 }

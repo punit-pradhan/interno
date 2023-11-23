@@ -7,20 +7,20 @@
     margin: 0 auto; // Center the container horizontally
 
     @include media($extra-large-screen) {
-        max-width: 1140px; 
+        max-width: 1140px;
         padding: 0 20px;
     }
 
     @include media($large-screen) {
-        max-width: 960px; 
+        max-width: 960px;
     }
 
     @include media($tablet-screen) {
-        max-width: 720px; 
+        max-width: 720px;
     }
 
     @include media($mobile-screen) {
-        max-width: 100%; 
+        max-width: 100%;
     }
 }
 
@@ -30,14 +30,14 @@
 }
 
 .margin-20 {
-    margin: 20px 0;
+    padding: 20px 0;
 }
 
 .default-btn {
     @include button;
     background: #292F36;
     width: 225px;
-   
+
 }
 
 .large-btn {
@@ -48,26 +48,80 @@
 
 .primary-btn {
     @include button;
-    box-shadow: 0px 10px 20px 0px rgba(0,0,0);
+    box-shadow: 0px 10px 20px 0px rgba(0, 0, 0);
     background: $Primary-1;
     width: 265px;
     margin: 0 auto;
 }
-.large-btn,.primary-btn,.default-btn{
+
+.large-btn,
+.primary-btn,
+.default-btn {
     @include media($extra-large-screen) {
-    width: fit-content;
+        width: fit-content;
     }
 
-    @include media($mobile-screen){
+    @include media($mobile-screen) {
         padding: 14px 20px;
     }
 }
+
 .img-fluid {
     display: block;
     max-width: 100%;
     height: auto;
-  }
+}
 
-  .bold {
+.bold {
     @include text-styles($secondary-color, $font-regular, 22px, 600, 1.25);
+}
+
+.lines {
+
+    z-index: -1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    .line-1 {
+        width: 1px;
+        background-color: #E6E6E6;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        bottom: 0;
+
+    }
+
+    .line-2 {
+        width: 1px;
+        background-color: #E6E6E6;
+        height: 100%;
+        left: 33.33%;
+        top: 0;
+        bottom: 0;
+        position: absolute;
+    }
+
+    .line-3 {
+        width: 1px;
+        background-color: #E6E6E6;
+        height: 100%;
+        right: 33.33%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
+
+    .line-4 {
+        right: 0;
+        width: 1px;
+        background-color: #E6E6E6;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+    }
 }
