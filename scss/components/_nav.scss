@@ -41,7 +41,6 @@
             display: block;
             padding: 20px 20px;
             @include text-styles($secondary-color, $font-regular, 20px, 400, 1.25);
-            border-right: 1px solid #f4f4f4;
             text-decoration: none;
         }
 

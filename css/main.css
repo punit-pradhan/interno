@@ -250,7 +250,6 @@ ul {
   font-size: 20px;
   font-weight: 400;
   line-height: 1.25;
-  border-right: 1px solid #f4f4f4;
   text-decoration: none;
 }
 .navbar__menu li a:hover,
