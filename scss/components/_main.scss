@@ -71,15 +71,16 @@
 .card {
     padding: 84px 0;
     margin: 95px 0;
+    flex-wrap: wrap;
+    @include flex-center;
 
     @include media($tablet-screen) {
-        flex-wrap: wrap;
-        @include flex-center;
         margin: 0;
     }
 
     &__div {
         padding: 21px;
+        width: 33.33%;
 
         @include media($tablet-screen) {
             width: 50%;
@@ -98,18 +99,22 @@
             margin-bottom: 52px;
         }
 
-        a {
-            @include flex;
+        .bold {
+            @include flex-center;
             gap: 10px;
-            align-items: center;
-            justify-content: center;
+            @include text-styles($secondary-color, $font-regular, 18px, 600, 1.25);
+            margin-bottom: 0;
+            text-align: center;
+            width: fit-content;
+            margin: 0 auto;
 
-            .bold {
-                font-weight: 600;
-                font-size: 18px;
-                margin-bottom: 0;
-                line-height: 1.25;
-                text-align: center;
+            &::after {
+                padding-top: 5px;
+                content: url(../../images/icons/Vector.svg);
+            }
+
+            &:hover {
+                color: red;
             }
         }
 
@@ -248,6 +253,10 @@
         padding: 50px 18px;
     }
 
+    @include media($mobile-screen) {
+        padding: 30px 5px;
+    }
+
     h2 {
         @include text-styles($primary-color, $font-medium, 50px, 400, 1.25);
         text-align: center;
@@ -267,8 +276,12 @@
     &__cards {
         padding: 20px;
 
+        @include media($mobile-screen) {
+            padding: 5px;
+        }
+
         .slick-prev {
-            display: none;
+            display: none !important;
             position: absolute;
             left: 10px;
             top: 50%;
@@ -279,7 +292,7 @@
         }
 
         .slick-next {
-            display: none;
+            display: none !important;
             position: absolute;
             right: 10px;
             top: 50%;
@@ -294,24 +307,23 @@
             background-color: black;
         }
 
+        .slick-list {
+            display: flex;
+
+            @include media($tablet-screen) {
+                height: auto;
+            }
+
+            .slick-track {
+                display: flex;
+            }
+        }
+
         &__card {
             margin: 0 10px;
             border-radius: 20px;
             padding: 54px 37px;
             background-color: $white-color;
-            height: 356.2px !important;
-
-            @include media($extra-large-screen) {
-                height: 440px !important;
-            }
-
-            @include media($tablet-screen) {
-                height: 290px !important;
-            }
-
-            @include media($mobile-screen) {
-                height: 400px !important;
-            }
 
             &__top {
                 align-items: center;
@@ -464,13 +476,14 @@
 
                 &__btn {
                     .btn {
-                        img {
-                            border-radius: 50%;
+                        background-image: url(../../images/icons/arrow.WEBP);
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
 
-                            @include media($tablet-screen) {
-                                width: 50px;
-                                height: 50px;
-                            }
+                        @include media($tablet-screen) {
+                            width: 50px;
+                            height: 50px;
                         }
                     }
                 }
@@ -515,11 +528,6 @@
         &__text {
             width: 25%;
             position: relative;
-
-            // @include media($large-screen) {
-            //     border-right: 1px solid $Primary-1;
-            //     padding-right: 20px;
-            // }
 
             @include media($mobile-screen) {
                 width: 40%;
@@ -642,9 +650,6 @@
                     border-radius: 8px 8px 8px 0px;
                     padding: 8px;
                     left: 25px;
-
-                    // @include media($large-screen) {
-                    // }
                 }
             }
 
@@ -733,5 +738,9 @@
         @include media($tablet-screen) {
             font-size: 18px;
         }
+    }
+
+    a {
+        margin: 0 auto !important;
     }
 }

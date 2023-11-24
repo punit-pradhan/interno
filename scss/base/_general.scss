@@ -38,25 +38,43 @@
     background: #292F36;
     width: 225px;
 
+    &::after {
+        padding-top: 5px;
+        content: url(../../images/icons/Vector.svg);
+    }
 }
 
 .large-btn {
     @include button;
     background: #292F36;
-    width: 290px;
+    width: 270px;
+
+    &::after {
+        padding-top: 5px;
+        content: url(../../images/icons/Vector.svg);
+    }
 }
 
 .primary-btn {
     @include button;
     box-shadow: 0px 10px 20px 0px rgba(0, 0, 0);
     background: $Primary-1;
-    width: 265px;
+    width: 261px;
     margin: 0 auto;
+
+    &::after {
+        padding-top: 5px;
+        content: url(../../images/icons/Vector.WEBP);
+    }
 }
 
 .large-btn,
 .primary-btn,
 .default-btn {
+    &:hover {
+        color: red !important;
+    }
+
     @include media($extra-large-screen) {
         width: fit-content;
     }
@@ -126,6 +144,7 @@
         bottom: 0;
     }
 }
+
 .line-5 {
     right: 0;
     height: 1px;

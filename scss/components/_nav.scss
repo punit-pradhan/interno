@@ -153,15 +153,10 @@
     }
 
     #search-btn {
-        margin: 0px 0 0 31px;
-
-        @include media($tablet-screen) {
-            margin: 0px 0 0 10px;
-        }
-
-        @include media($mobile-screen) {
-            margin: 0px 0 0 35px;
-        }
+        background-image: url(../../images/icons/Search.svg);
+        height: 23px;
+        width: 23px;
+        padding-left: 10px;
     }
 
 }

@@ -73,7 +73,7 @@
     }
 
     &__contact {
-        h3 {
+        a {
             @include text-styles($secondary-color, $font-regular, 22px, 400, 1.5);
             word-wrap: break-word;
             margin: 17px 0;
