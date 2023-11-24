@@ -102,7 +102,17 @@
     right: 0;
     top: 0;
     bottom: 58.5px;
+    @include media($large-screen) {
+        bottom: 75px;
+    }
 
+    @include media($tablet-screen) {
+        bottom: 105px;
+    }
+
+    @include media($mobile-screen) {
+        bottom: 172px;
+    }
     .line-1 {
         width: 1px;
         background-color: #E6E6E6;
@@ -152,4 +162,15 @@
     width: 100%;
     position: absolute;
     bottom: 59px;
+    @include media($large-screen) {
+        bottom: 75px;
+    }
+
+    @include media($tablet-screen) {
+        bottom: 105px;
+    }
+
+    @include media($mobile-screen) {
+        bottom: 172px;
+    }
 }

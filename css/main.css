@@ -160,6 +160,21 @@
   top: 0;
   bottom: 58.5px;
 }
+@media screen and (max-width: 992px) {
+  .lines {
+    bottom: 75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .lines {
+    bottom: 105px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .lines {
+    bottom: 172px;
+  }
+}
 .lines .line-1 {
   width: 1px;
   background-color: #E6E6E6;
@@ -204,6 +219,21 @@
   width: 100%;
   position: absolute;
   bottom: 59px;
+}
+@media screen and (max-width: 992px) {
+  .line-5 {
+    bottom: 75px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .line-5 {
+    bottom: 105px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .line-5 {
+    bottom: 172px;
+  }
 }
 
 * {

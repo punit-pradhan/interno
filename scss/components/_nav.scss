@@ -16,13 +16,6 @@
 
         a {
             @include flex-center;
-
-            img {
-                @include media($mobile-screen) {
-                    // width: 70%;
-                    // height: auto;
-                }
-            }
         }
     }
 
@@ -62,7 +55,7 @@
     .menu-icon {
         cursor: pointer;
         display: inline-block;
-        float: right;
+        float:right;
         padding: 28px 20px;
         position: relative;
         user-select: none;
