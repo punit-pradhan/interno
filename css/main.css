@@ -67,7 +67,7 @@
 }
 .default-btn::after {
   padding-top: 5px;
-  content: url(../../images/icons/Vector.svg);
+  content: url(../images/icons/Vector.svg);
 }
 
 .large-btn {
@@ -90,7 +90,7 @@
 }
 .large-btn::after {
   padding-top: 5px;
-  content: url(../../images/icons/Vector.svg);
+  content: url(../images/icons/Vector.svg);
 }
 
 .primary-btn {
@@ -115,7 +115,7 @@
 }
 .primary-btn::after {
   padding-top: 5px;
-  content: url(../../images/icons/Vector.WEBP);
+  content: url(../images/icons/Vector.WEBP);
 }
 
 .large-btn:hover,
@@ -388,7 +388,7 @@ ul {
   }
 }
 .navbar #search-btn {
-  background-image: url(../../images/icons/Search.svg);
+  background-image: url(../images/icons/Search.svg);
   height: 23px;
   width: 23px;
   padding-left: 10px;
@@ -528,7 +528,7 @@ ul {
 }
 .card__div .bold::after {
   padding-top: 5px;
-  content: url(../../images/icons/Vector.svg);
+  content: url(../images/icons/Vector.svg);
 }
 .card__div .bold:hover {
   color: red;
